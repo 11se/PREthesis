@@ -7,7 +7,7 @@ public class MouseMovement : MonoBehaviour
     public float mouseSensitivity = 200f;
 
     float xRotation = 0f;
-    float yRotation = 0f;
+    float yRotation = -180.0f;
 
     public float Topclamp = -90f;
     public float Bottomclamp = 90f;
@@ -33,10 +33,10 @@ public class MouseMovement : MonoBehaviour
         xRotation = Mathf.Clamp(xRotation, Topclamp, Bottomclamp);
 
         // หมุน ซ้าย-ขวา
-        yRotation += mouseX;
+        yRotation += mouseX; 
 
-        // Apply ค่าหมุนไปเป็น Transform
-        transform.localRotation = Quaternion.Euler(xRotation, yRotation, 0f);
+         // Apply ค่าหมุนไปเป็น Transform
+         transform.localRotation = Quaternion.Euler(xRotation, yRotation, 0f);
 
     }
 

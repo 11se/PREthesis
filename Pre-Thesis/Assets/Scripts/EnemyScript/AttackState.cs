@@ -21,8 +21,8 @@ public class AttackState : BaseState
 
     public override void Perform()
     {
-        if (enemy.CanSeePlayer())
-        {
+        /*if (enemy.CanSeePlayer())
+        {*/
             losePlayerTimer = 0;
             moveTimer += Time.deltaTime;
             shotTimer += Time.deltaTime;
@@ -38,7 +38,7 @@ public class AttackState : BaseState
                 moveTimer = 0;
             }
             //enemy.LastKnowPos = enemy.Player.transform.position;
-        }
+       /* }
         else
         {
             losePlayerTimer += Time.deltaTime;
@@ -47,7 +47,7 @@ public class AttackState : BaseState
                 //Change to search state.
                 stateMachine.ChangeState(new PatrolState()); ;
             }
-        }
+        }*/
     }
     public void Shoot()
     {
@@ -60,7 +60,7 @@ public class AttackState : BaseState
         //calculate the direction to the player.
         Vector3 shootDirection =(enemy.Player.transform.position - gunbarrel.transform.position).normalized;
         //add force rigidbody of ht bullet.
-        IceBalls.GetComponent<Rigidbody>().velocity = shootDirection * 25;
+        IceBalls.GetComponent<Rigidbody>().velocity = shootDirection * 15;
         
         Debug.Log("Shoot");
         shotTimer = 0;

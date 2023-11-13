@@ -9,7 +9,7 @@ public class StateMachine : MonoBehaviour
     public void Initialise()
     {
         
-        ChangeState(new PatrolState());
+        ChangeState(new AttackState());
     }
     // Start is called before the first frame update
     void Start()
