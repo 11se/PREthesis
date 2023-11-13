@@ -7,13 +7,14 @@ public class SoundManager : MonoBehaviour
 {
     public static SoundManager instance{  get; set; }
 
-    public AudioSource PistolShootingSound;
+    public AudioSource ShootingChannel;
+
+    public AudioClip PistolShot;
+    public AudioClip SMGShot;
+    public AudioClip ShotgunShot;
+
     public AudioSource PistolReloadoutSound;
-
-    public AudioSource SMGShootingSound;
     public AudioSource SMGReloadoutSound;
-
-    public AudioSource ShotgunShootingSound;
     public AudioSource ShotgunReloadoutSound;
 
     public AudioSource EmptySound;
@@ -38,13 +39,13 @@ public class SoundManager : MonoBehaviour
         switch(weapon)
         {
             case WeaponModel.Pistol:
-                PistolShootingSound.Play(); 
+                ShootingChannel.PlayOneShot(PistolShot); 
                 break;
             case WeaponModel.SMG:
-                SMGShootingSound.Play(); 
+                ShootingChannel.PlayOneShot(SMGShot); 
                 break;
             case WeaponModel.Shotgun:
-                ShotgunShootingSound.Play(); 
+                ShootingChannel.PlayOneShot(ShotgunShot); 
                 break;
         }
 
