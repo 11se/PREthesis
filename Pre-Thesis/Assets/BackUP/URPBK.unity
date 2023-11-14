@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 709084365}
-  m_IndirectSpecularColor: {r: 0.1731101, g: 0.21636018, b: 0.29837102, a: 1}
+  m_IndirectSpecularColor: {r: 0.17310967, g: 0.2163595, b: 0.29836968, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -35429,6 +35429,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2022707212}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &2131619851 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7172404359362276845, guid: 38a1dbd7bfe81d44bba1d1b33a4b8f34,
+    type: 3}
+  m_PrefabInstance: {fileID: 3370474981622479581}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2140078771
 GameObject:
   m_ObjectHideFlags: 0
@@ -35692,6 +35698,11 @@ PrefabInstance:
       propertyPath: hitMarker
       value: 
       objectReference: {fileID: 1051430892}
+    - target: {fileID: 8660118677232257250, guid: a2dd21d29fb1d314fb65f5ccf6af776c,
+        type: 3}
+      propertyPath: BloodUI
+      value: 
+      objectReference: {fileID: 2131619851}
     - target: {fileID: 8660118677232257250, guid: a2dd21d29fb1d314fb65f5ccf6af776c,
         type: 3}
       propertyPath: healthText
