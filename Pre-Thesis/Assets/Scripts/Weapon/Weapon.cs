@@ -196,7 +196,7 @@ public class Weapon : MonoBehaviour
     {
         if (hasInfiniteAmmo)
         {
-            _currentBullet = _bulletLeft;
+            _currentBullet = magazineSize;
         }
         else 
         {
