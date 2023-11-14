@@ -5,7 +5,8 @@ using UnityEngine;
 
 public class EnemyBullet : MonoBehaviour
 {
-
+    [SerializeField]
+    private int _damage = 25;
 
    
     //เอาไว้ใช้กับตัวระเบิดได้
@@ -15,7 +16,7 @@ public class EnemyBullet : MonoBehaviour
         if (hitTransform.CompareTag("Player"))
         {
             Debug.Log("Hit Player");
-            hitTransform.GetComponent<HealthCont>().TakeDamage(25);
+            hitTransform.GetComponent<HealthCont>().TakeDamage(_damage);
             
         }
         Destroy(gameObject);

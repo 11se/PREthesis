@@ -382,6 +382,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24b5c7f92ad54774888015152cccc941, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _enemyBullet: {fileID: 2776350850504854515, guid: 89a558cf4c1ae10429c0b3f5ca0519ee,
+    type: 3}
+  projectileSpeed: 15
   MosterDead: {fileID: 8942829583801335613}
   stateMachine: {fileID: 7244703540322503806}
   agent: {fileID: 5027591487046550168}
