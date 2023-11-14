@@ -60,7 +60,7 @@ public class AttackState : BaseState
         //calculate the direction to the player.
         Vector3 shootDirection =(enemy.Player.transform.position - gunbarrel.transform.position).normalized;
         //add force rigidbody of ht bullet.
-        IceBalls.GetComponent<Rigidbody>().velocity = shootDirection * 15;
+        IceBalls.GetComponent<Rigidbody>().velocity = shootDirection * enemy.projectileSpeed;
         
         Debug.Log("Shoot");
         shotTimer = 0;

@@ -33,9 +33,16 @@ public class Weapon : MonoBehaviour
     //Loading
     public float ReloadTime;
 
-    public int magazineSize, BulletsLeft;
+    public int magazineSize;
+
+
+    public int _currentBullet;
+
+    public int _bulletLeft;
 
     public bool isReloading;
+
+    public bool hasInfiniteAmmo = false;
 
     public enum WeaponModel
     {
@@ -67,14 +74,14 @@ public class Weapon : MonoBehaviour
 
         anim = GetComponent<Animator>();
 
-        BulletsLeft = magazineSize;
+        _currentBullet = magazineSize;
     }
 
 
     // Update is called once per frame
     void Update()
     {
-        if(BulletsLeft ==0 && IsShooting)
+        if(_currentBullet ==0 && IsShooting)
         {
             SoundManager.instance.EmptySound.Play();
         }
@@ -95,18 +102,13 @@ public class Weapon : MonoBehaviour
 
         }
 
-        if (Input.GetKeyDown(KeyCode.R) && BulletsLeft < magazineSize && isReloading == false && isReloading == false)
+        if (Input.GetKeyDown(KeyCode.R) && _currentBullet < magazineSize && isReloading == false)
         {
             Reload();
-            
         }
 
-        /*if (ReadyToShoot && IsShooting == false && isReloading == false && BulletsLeft <= 0)
-        {
-            Reload();
-        }*/
 
-        if (ReadyToShoot && IsShooting && BulletsLeft > 0)
+        if (ReadyToShoot && IsShooting && _currentBullet > 0)
         {
             BurstBulletsLeft = bulletsPerBurst;
 
@@ -115,17 +117,29 @@ public class Weapon : MonoBehaviour
         }
         if (AmmoManager.Instance.ammoDisplay != null)
         {
-            AmmoManager.Instance.ammoDisplay.text = $"{BulletsLeft / bulletsPerBurst}/{magazineSize/bulletsPerBurst}";
+            if (hasInfiniteAmmo)
+            {
+                AmmoManager.Instance.ammoDisplay.text = $"{_currentBullet / bulletsPerBurst}" +"/Infi.";
+            }
+            else 
+            {
+                AmmoManager.Instance.ammoDisplay.text = $"{_currentBullet / bulletsPerBurst}/{_bulletLeft / bulletsPerBurst}";
+            }
+
         }
 
         
     }
 
+    public void AddBulletLeft(int amount) 
+    {
+        _bulletLeft += amount;
+    }
     
 
     private void fireWeapon()
     {
-        BulletsLeft--;
+        _currentBullet--;
 
         //SoundManager.instance.PistolShootSound.Play();
 
@@ -180,7 +194,33 @@ public class Weapon : MonoBehaviour
 
     private void ReloadCompleted()
     {
-        BulletsLeft = magazineSize;
+        if (hasInfiniteAmmo)
+        {
+            _currentBullet = _bulletLeft;
+        }
+        else 
+        {
+            if (_bulletLeft < magazineSize)
+            {
+                if (_bulletLeft > magazineSize - _currentBullet)
+                {
+                    int reloadingBullet = (_bulletLeft - _currentBullet);
+                    _bulletLeft -= reloadingBullet;
+                    _currentBullet += reloadingBullet;
+                }
+                else
+                {
+                    _currentBullet += _bulletLeft;
+                    _bulletLeft = 0;
+                }
+            }
+            else
+            {
+                int reloadingBullet = (magazineSize - _currentBullet);
+                _bulletLeft -= reloadingBullet;
+                _currentBullet += reloadingBullet;
+            }
+        }
 
         isReloading = false;
     }
