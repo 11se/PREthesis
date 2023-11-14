@@ -44,6 +44,8 @@ public class Weapon : MonoBehaviour
 
     public bool hasInfiniteAmmo = false;
 
+    private PlayerMovement _playerMovement;
+
     public enum WeaponModel
     {
         Pistol,
@@ -74,6 +76,8 @@ public class Weapon : MonoBehaviour
 
         anim = GetComponent<Animator>();
 
+        _playerMovement = GetComponentInParent<PlayerMovement>();
+
         _currentBullet = magazineSize;
     }
 
@@ -81,25 +85,30 @@ public class Weapon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(_currentBullet ==0 && IsShooting)
+
+        if (!_playerMovement.IsReloading()) 
+        {
+            if (currentshootingMode == ShootingMode.Auto)
+            {
+
+                IsShooting = Input.GetKey(KeyCode.Mouse0);
+
+
+            }
+            else if (currentshootingMode == ShootingMode.Single || currentshootingMode == ShootingMode.Burst)
+            {
+
+                IsShooting = Input.GetKeyDown(KeyCode.Mouse0);
+
+
+            }
+        }
+        
+
+
+        if (_currentBullet == 0 && IsShooting)
         {
             SoundManager.instance.EmptySound.Play();
-        }
-        
-        
-        if (currentshootingMode == ShootingMode.Auto)
-        {
-
-            IsShooting = Input.GetKey(KeyCode.Mouse0);
-            
-
-        }
-        else if (currentshootingMode == ShootingMode.Single || currentshootingMode == ShootingMode.Burst)
-        {
-
-            IsShooting = Input.GetKeyDown(KeyCode.Mouse0);
-            
-
         }
 
         if (Input.GetKeyDown(KeyCode.R) && _currentBullet < magazineSize && isReloading == false)
@@ -177,7 +186,7 @@ public class Weapon : MonoBehaviour
         }
     }
 
-    private void Reload()
+    public void Reload()
     {
 
         //SoundManager.instance.PistolReloadSound.Play();

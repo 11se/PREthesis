@@ -1937,8 +1937,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weapons:
   - {fileID: 2062846416499895456}
-  - {fileID: 1116781157574651440}
   - {fileID: 4470850826107373169}
+  - {fileID: 1116781157574651440}
 --- !u!1 &8212359665906566523
 GameObject:
   m_ObjectHideFlags: 0

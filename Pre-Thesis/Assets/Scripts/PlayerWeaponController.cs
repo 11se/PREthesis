@@ -26,7 +26,7 @@ public class PlayerWeaponController : MonoBehaviour
         if (Input.GetAxis("Mouse ScrollWheel") > 0f) // forward
         {
             currentWeaponIndex++;
-            if (currentWeaponIndex >= 2) 
+            if (currentWeaponIndex > 2) 
             {
                 currentWeaponIndex = 0;
             }
@@ -35,12 +35,17 @@ public class PlayerWeaponController : MonoBehaviour
         if (Input.GetAxis("Mouse ScrollWheel") < 0f) // backwards
         {
             currentWeaponIndex--;
-            if (currentWeaponIndex <= 0)
+            if (currentWeaponIndex < 0)
             {
                 currentWeaponIndex = 2;
             }
             SetActiveWeapon(currentWeaponIndex);
         }
+    }
+
+    public Weapon GetCurrentWeapon() 
+    {
+        return weapons[currentWeaponIndex];
     }
 
     public void PickUpWeapon(Weapon.WeaponModel type, int amount) 
