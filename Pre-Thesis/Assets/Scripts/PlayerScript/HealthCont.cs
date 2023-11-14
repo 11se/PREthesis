@@ -25,6 +25,8 @@ public class HealthCont : MonoBehaviour
 
     public GameObject deathScreen;
     public GameObject player;
+    public Animator BloodUI;
+
     public void Start()
     {
         currentHealth = maxHealth;     
@@ -32,6 +34,8 @@ public class HealthCont : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
+        Debug.Log("damage");
+        BloodUI.SetTrigger("OnAttack");
         StartCoroutine(SmoothDecreaseDuration(damage));
     }
 

@@ -383,6 +383,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24b5c7f92ad54774888015152cccc941, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  projectileSpeed: 30
   MosterDead: {fileID: 0}
   stateMachine: {fileID: 1569523148699735461}
   agent: {fileID: 8610625574814126976}
