@@ -350,7 +350,7 @@ PrefabInstance:
         type: 3}
       propertyPath: healthText
       value: 
-      objectReference: {fileID: 1808240337}
+      objectReference: {fileID: 0}
     - target: {fileID: 1536397001333203128, guid: 9c3f654a0577d884aa7abf223e5b1155,
         type: 3}
       propertyPath: m_Name
@@ -640,6 +640,84 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 54869082}
   m_Mesh: {fileID: -4583467165816326547, guid: 1d9b6b1e88983d445a3dd9d9a6415f29, type: 3}
+--- !u!1001 &79038217
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 733744674030666453, guid: 9cc4bfdbfbc157143962bcba8ca8a484,
+        type: 3}
+      propertyPath: m_Name
+      value: BarrelBomb
+      objectReference: {fileID: 0}
+    - target: {fileID: 756728430012836204, guid: 9cc4bfdbfbc157143962bcba8ca8a484,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 75.39837
+      objectReference: {fileID: 0}
+    - target: {fileID: 756728430012836204, guid: 9cc4bfdbfbc157143962bcba8ca8a484,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 756728430012836204, guid: 9cc4bfdbfbc157143962bcba8ca8a484,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -189.42155
+      objectReference: {fileID: 0}
+    - target: {fileID: 756728430012836204, guid: 9cc4bfdbfbc157143962bcba8ca8a484,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 756728430012836204, guid: 9cc4bfdbfbc157143962bcba8ca8a484,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 756728430012836204, guid: 9cc4bfdbfbc157143962bcba8ca8a484,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 756728430012836204, guid: 9cc4bfdbfbc157143962bcba8ca8a484,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 756728430012836204, guid: 9cc4bfdbfbc157143962bcba8ca8a484,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 756728430012836204, guid: 9cc4bfdbfbc157143962bcba8ca8a484,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 756728430012836204, guid: 9cc4bfdbfbc157143962bcba8ca8a484,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1836647732019304276, guid: 9cc4bfdbfbc157143962bcba8ca8a484,
+        type: 3}
+      propertyPath: m_Radius
+      value: 11.62
+      objectReference: {fileID: 0}
+    - target: {fileID: 5354323094578726646, guid: 9cc4bfdbfbc157143962bcba8ca8a484,
+        type: 3}
+      propertyPath: _damage
+      value: 10000
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9cc4bfdbfbc157143962bcba8ca8a484, type: 3}
 --- !u!1 &80776458
 GameObject:
   m_ObjectHideFlags: 0
@@ -683,7 +761,7 @@ PrefabInstance:
         type: 3}
       propertyPath: healthText
       value: 
-      objectReference: {fileID: 1808240337}
+      objectReference: {fileID: 0}
     - target: {fileID: 1536397001333203128, guid: 9c3f654a0577d884aa7abf223e5b1155,
         type: 3}
       propertyPath: m_Name
@@ -2157,6 +2235,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24b5c7f92ad54774888015152cccc941, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _enemyBullet: {fileID: 0}
+  projectileSpeed: 15
   MosterDead: {fileID: 0}
   stateMachine: {fileID: 194199038}
   agent: {fileID: 194199040}
@@ -3665,6 +3745,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24b5c7f92ad54774888015152cccc941, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _enemyBullet: {fileID: 0}
+  projectileSpeed: 15
   MosterDead: {fileID: 0}
   stateMachine: {fileID: 274320838}
   agent: {fileID: 274320840}
@@ -4415,7 +4497,7 @@ PrefabInstance:
         type: 3}
       propertyPath: healthText
       value: 
-      objectReference: {fileID: 1808240337}
+      objectReference: {fileID: 0}
     - target: {fileID: 1536397001333203128, guid: 9c3f654a0577d884aa7abf223e5b1155,
         type: 3}
       propertyPath: m_Name
@@ -8383,7 +8465,7 @@ PrefabInstance:
         type: 3}
       propertyPath: healthText
       value: 
-      objectReference: {fileID: 1808240337}
+      objectReference: {fileID: 0}
     - target: {fileID: 1536397001333203128, guid: 9c3f654a0577d884aa7abf223e5b1155,
         type: 3}
       propertyPath: m_Name
@@ -8664,7 +8746,7 @@ PrefabInstance:
         type: 3}
       propertyPath: healthText
       value: 
-      objectReference: {fileID: 1808240337}
+      objectReference: {fileID: 0}
     - target: {fileID: 1536397001333203128, guid: 9c3f654a0577d884aa7abf223e5b1155,
         type: 3}
       propertyPath: m_Name
@@ -8956,7 +9038,7 @@ PrefabInstance:
         type: 3}
       propertyPath: healthText
       value: 
-      objectReference: {fileID: 1808240337}
+      objectReference: {fileID: 0}
     - target: {fileID: 1536397001333203128, guid: 9c3f654a0577d884aa7abf223e5b1155,
         type: 3}
       propertyPath: m_Name
@@ -9092,6 +9174,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24b5c7f92ad54774888015152cccc941, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _enemyBullet: {fileID: 0}
+  projectileSpeed: 15
   MosterDead: {fileID: 0}
   stateMachine: {fileID: 443483047}
   agent: {fileID: 443483049}
@@ -10696,7 +10780,7 @@ PrefabInstance:
         type: 3}
       propertyPath: healthText
       value: 
-      objectReference: {fileID: 1808240337}
+      objectReference: {fileID: 0}
     - target: {fileID: 1536397001333203128, guid: 9c3f654a0577d884aa7abf223e5b1155,
         type: 3}
       propertyPath: m_Name
@@ -11272,7 +11356,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &683483483
 Transform:
   m_ObjectHideFlags: 0
@@ -11549,6 +11633,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24b5c7f92ad54774888015152cccc941, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _enemyBullet: {fileID: 0}
+  projectileSpeed: 15
   MosterDead: {fileID: 0}
   stateMachine: {fileID: 700671589}
   agent: {fileID: 700671591}
@@ -12243,7 +12329,7 @@ PrefabInstance:
         type: 3}
       propertyPath: healthText
       value: 
-      objectReference: {fileID: 1808240337}
+      objectReference: {fileID: 0}
     - target: {fileID: 1536397001333203128, guid: 9c3f654a0577d884aa7abf223e5b1155,
         type: 3}
       propertyPath: m_Name
@@ -12939,7 +13025,7 @@ PrefabInstance:
         type: 3}
       propertyPath: healthText
       value: 
-      objectReference: {fileID: 1808240337}
+      objectReference: {fileID: 0}
     - target: {fileID: 1536397001333203128, guid: 9c3f654a0577d884aa7abf223e5b1155,
         type: 3}
       propertyPath: m_Name
@@ -13466,7 +13552,7 @@ PrefabInstance:
         type: 3}
       propertyPath: healthText
       value: 
-      objectReference: {fileID: 1808240337}
+      objectReference: {fileID: 0}
     - target: {fileID: 1536397001333203128, guid: 9c3f654a0577d884aa7abf223e5b1155,
         type: 3}
       propertyPath: m_Name
@@ -13674,7 +13760,7 @@ PrefabInstance:
         type: 3}
       propertyPath: healthText
       value: 
-      objectReference: {fileID: 1808240337}
+      objectReference: {fileID: 0}
     - target: {fileID: 1536397001333203128, guid: 9c3f654a0577d884aa7abf223e5b1155,
         type: 3}
       propertyPath: m_Name
@@ -14275,7 +14361,7 @@ PrefabInstance:
         type: 3}
       propertyPath: healthText
       value: 
-      objectReference: {fileID: 1808240337}
+      objectReference: {fileID: 0}
     - target: {fileID: 1536397001333203128, guid: 9c3f654a0577d884aa7abf223e5b1155,
         type: 3}
       propertyPath: m_Name
@@ -15039,7 +15125,7 @@ PrefabInstance:
         type: 3}
       propertyPath: healthText
       value: 
-      objectReference: {fileID: 1808240337}
+      objectReference: {fileID: 0}
     - target: {fileID: 1536397001333203128, guid: 9c3f654a0577d884aa7abf223e5b1155,
         type: 3}
       propertyPath: m_Name
@@ -15870,7 +15956,7 @@ PrefabInstance:
         type: 3}
       propertyPath: healthText
       value: 
-      objectReference: {fileID: 1808240337}
+      objectReference: {fileID: 0}
     - target: {fileID: 1536397001333203128, guid: 9c3f654a0577d884aa7abf223e5b1155,
         type: 3}
       propertyPath: m_Name
@@ -16292,7 +16378,7 @@ PrefabInstance:
         type: 3}
       propertyPath: healthText
       value: 
-      objectReference: {fileID: 1808240337}
+      objectReference: {fileID: 0}
     - target: {fileID: 1536397001333203128, guid: 9c3f654a0577d884aa7abf223e5b1155,
         type: 3}
       propertyPath: m_Name
@@ -17568,7 +17654,7 @@ PrefabInstance:
         type: 3}
       propertyPath: healthText
       value: 
-      objectReference: {fileID: 1808240337}
+      objectReference: {fileID: 0}
     - target: {fileID: 1536397001333203128, guid: 9c3f654a0577d884aa7abf223e5b1155,
         type: 3}
       propertyPath: m_Name
@@ -19124,7 +19210,7 @@ PrefabInstance:
         type: 3}
       propertyPath: healthText
       value: 
-      objectReference: {fileID: 1808240337}
+      objectReference: {fileID: 0}
     - target: {fileID: 1536397001333203128, guid: 9c3f654a0577d884aa7abf223e5b1155,
         type: 3}
       propertyPath: m_Name
@@ -19304,7 +19390,7 @@ PrefabInstance:
         type: 3}
       propertyPath: healthText
       value: 
-      objectReference: {fileID: 1808240337}
+      objectReference: {fileID: 0}
     - target: {fileID: 1536397001333203128, guid: 9c3f654a0577d884aa7abf223e5b1155,
         type: 3}
       propertyPath: m_Name
@@ -20523,7 +20609,7 @@ PrefabInstance:
         type: 3}
       propertyPath: healthText
       value: 
-      objectReference: {fileID: 1808240337}
+      objectReference: {fileID: 0}
     - target: {fileID: 1536397001333203128, guid: 9c3f654a0577d884aa7abf223e5b1155,
         type: 3}
       propertyPath: m_Name
@@ -20686,7 +20772,7 @@ PrefabInstance:
         type: 3}
       propertyPath: healthText
       value: 
-      objectReference: {fileID: 1808240337}
+      objectReference: {fileID: 0}
     - target: {fileID: 1536397001333203128, guid: 9c3f654a0577d884aa7abf223e5b1155,
         type: 3}
       propertyPath: m_Name
@@ -20949,7 +21035,7 @@ PrefabInstance:
         type: 3}
       propertyPath: healthText
       value: 
-      objectReference: {fileID: 1808240337}
+      objectReference: {fileID: 0}
     - target: {fileID: 1536397001333203128, guid: 9c3f654a0577d884aa7abf223e5b1155,
         type: 3}
       propertyPath: m_Name
@@ -21511,7 +21597,7 @@ PrefabInstance:
         type: 3}
       propertyPath: healthText
       value: 
-      objectReference: {fileID: 1808240337}
+      objectReference: {fileID: 0}
     - target: {fileID: 1536397001333203128, guid: 9c3f654a0577d884aa7abf223e5b1155,
         type: 3}
       propertyPath: m_Name
@@ -22151,7 +22237,7 @@ PrefabInstance:
         type: 3}
       propertyPath: healthText
       value: 
-      objectReference: {fileID: 1808240337}
+      objectReference: {fileID: 0}
     - target: {fileID: 1536397001333203128, guid: 9c3f654a0577d884aa7abf223e5b1155,
         type: 3}
       propertyPath: m_Name
@@ -22230,7 +22316,7 @@ PrefabInstance:
         type: 3}
       propertyPath: healthText
       value: 
-      objectReference: {fileID: 1808240337}
+      objectReference: {fileID: 0}
     - target: {fileID: 1536397001333203128, guid: 9c3f654a0577d884aa7abf223e5b1155,
         type: 3}
       propertyPath: m_Name
@@ -22996,18 +23082,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &1808240337 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1096973921908613704, guid: 38a1dbd7bfe81d44bba1d1b33a4b8f34,
-    type: 3}
-  m_PrefabInstance: {fileID: 3370474981622479581}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1811591210
 GameObject:
   m_ObjectHideFlags: 0
@@ -23306,7 +23380,7 @@ PrefabInstance:
         type: 3}
       propertyPath: healthText
       value: 
-      objectReference: {fileID: 1808240337}
+      objectReference: {fileID: 0}
     - target: {fileID: 1536397001333203128, guid: 9c3f654a0577d884aa7abf223e5b1155,
         type: 3}
       propertyPath: m_Name
@@ -24311,7 +24385,7 @@ PrefabInstance:
         type: 3}
       propertyPath: healthText
       value: 
-      objectReference: {fileID: 1808240337}
+      objectReference: {fileID: 0}
     - target: {fileID: 1536397001333203128, guid: 9c3f654a0577d884aa7abf223e5b1155,
         type: 3}
       propertyPath: m_Name
@@ -24655,6 +24729,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24b5c7f92ad54774888015152cccc941, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _enemyBullet: {fileID: 0}
+  projectileSpeed: 15
   MosterDead: {fileID: 0}
   stateMachine: {fileID: 1922883542}
   agent: {fileID: 1922883544}
@@ -25690,7 +25766,7 @@ PrefabInstance:
         type: 3}
       propertyPath: healthText
       value: 
-      objectReference: {fileID: 1808240337}
+      objectReference: {fileID: 0}
     - target: {fileID: 1536397001333203128, guid: 9c3f654a0577d884aa7abf223e5b1155,
         type: 3}
       propertyPath: m_Name
@@ -25769,7 +25845,7 @@ PrefabInstance:
         type: 3}
       propertyPath: healthText
       value: 
-      objectReference: {fileID: 1808240337}
+      objectReference: {fileID: 0}
     - target: {fileID: 1536397001333203128, guid: 9c3f654a0577d884aa7abf223e5b1155,
         type: 3}
       propertyPath: m_Name
@@ -26096,6 +26172,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24b5c7f92ad54774888015152cccc941, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _enemyBullet: {fileID: 0}
+  projectileSpeed: 15
   MosterDead: {fileID: 0}
   stateMachine: {fileID: 2083470672}
   agent: {fileID: 2083470674}
@@ -26852,7 +26930,7 @@ PrefabInstance:
         type: 3}
       propertyPath: healthText
       value: 
-      objectReference: {fileID: 1808240337}
+      objectReference: {fileID: 0}
     - target: {fileID: 8660118677232257250, guid: a2dd21d29fb1d314fb65f5ccf6af776c,
         type: 3}
       propertyPath: deathScreen
@@ -27209,3 +27287,4 @@ SceneRoots:
   - {fileID: 1244295678}
   - {fileID: 2126378367}
   - {fileID: 349962401}
+  - {fileID: 79038217}
