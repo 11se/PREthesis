@@ -51,16 +51,25 @@ public class AttackState : BaseState
     }
     public void Shoot()
     {
-        
         //Store ref to gun barrel.
         Transform gunbarrel = enemy.IceBall;
         //instantiate a new buller.
-        GameObject IceBalls = GameObject.Instantiate(Resources.Load("Prefab/IceBalls") as GameObject, gunbarrel.position, enemy.transform.rotation);
+        GameObject IceBalls;
+
+        if (enemy.EnemyBullet)
+        {
+            IceBalls = GameObject.Instantiate(enemy.EnemyBullet, gunbarrel.position, enemy.transform.rotation);
+        }
+        else 
+        {
+            IceBalls = GameObject.Instantiate(Resources.Load("Prefab/IceBalls") as GameObject, gunbarrel.position, enemy.transform.rotation);
+        }
+            
         
         //calculate the direction to the player.
         Vector3 shootDirection =(enemy.Player.transform.position - gunbarrel.transform.position).normalized;
         //add force rigidbody of ht bullet.
-        IceBalls.GetComponent<Rigidbody>().velocity = shootDirection * 15;
+        IceBalls.GetComponent<Rigidbody>().velocity = shootDirection * enemy.projectileSpeed;
         
         Debug.Log("Shoot");
         shotTimer = 0;

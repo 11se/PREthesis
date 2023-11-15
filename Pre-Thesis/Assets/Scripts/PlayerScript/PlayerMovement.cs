@@ -7,7 +7,7 @@ using UnityEngine.LowLevel;
 public class PlayerMovement : MonoBehaviour
 {
     private CharacterController Controller;
-    
+    private PlayerWeaponController _playerWeaponController;
 
     
     public float speed = 12f;
@@ -37,6 +37,7 @@ public class PlayerMovement : MonoBehaviour
        
         anim = GetComponent<Animator>();
         Controller = GetComponent<CharacterController>();
+        _playerWeaponController = GetComponent<PlayerWeaponController>();
     }
 
     // Update is called once per frame
@@ -87,8 +88,20 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
+            if (_playerWeaponController.GetCurrentWeapon()._currentBullet > 0 && !_playerWeaponController.GetCurrentWeapon().isReloading)
+            {
+                anim.SetTrigger("ArmShoot");
+            }
+            else 
+            {
+                if (!_playerWeaponController.GetCurrentWeapon().isReloading) 
+                {
+                    anim.SetTrigger("Reload");
+                    _playerWeaponController.GetCurrentWeapon().Reload();
+                }
+
+            }
             
-            anim.SetTrigger("ArmShoot");
             
         }
         if (Input.GetKeyDown(KeyCode.R))
@@ -101,6 +114,11 @@ public class PlayerMovement : MonoBehaviour
         
 
 
+    }
+
+    public bool IsReloading() 
+    {
+        return anim.GetCurrentAnimatorStateInfo(0).IsName("ArmReload");
     }
    
 }

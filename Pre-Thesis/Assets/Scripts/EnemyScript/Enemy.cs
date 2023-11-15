@@ -6,6 +6,11 @@ using UnityEngine.AI;
 
 public class Enemy : MonoBehaviour
 {
+    [SerializeField]
+    private GameObject _enemyBullet;
+    public GameObject EnemyBullet => _enemyBullet;
+
+    public float projectileSpeed = 15f;
 
     public AudioSource MosterDead;
 
