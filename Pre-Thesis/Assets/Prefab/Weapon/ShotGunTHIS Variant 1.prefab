@@ -263,8 +263,11 @@ MonoBehaviour:
   bulletPrefablifeTime: 1
   ReloadTime: 2
   magazineSize: 8
-  BulletsLeft: 0
+  _currentBullet: 0
+  _bulletLeft: 0
   isReloading: 0
+  hasInfiniteAmmo: 0
+  thisModel: 0
   currentshootingMode: 1
 --- !u!95 &1595398837648031337
 Animator:

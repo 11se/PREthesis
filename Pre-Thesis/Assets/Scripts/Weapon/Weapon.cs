@@ -46,6 +46,8 @@ public class Weapon : MonoBehaviour
 
     private PlayerMovement _playerMovement;
 
+    private Projectile _projectile;
+
     public enum WeaponModel
     {
         Pistol,
@@ -77,6 +79,8 @@ public class Weapon : MonoBehaviour
         anim = GetComponent<Animator>();
 
         _playerMovement = GetComponentInParent<PlayerMovement>();
+
+        _projectile = GetComponentInParent<Projectile>();
 
         _currentBullet = magazineSize;
     }
@@ -162,7 +166,7 @@ public class Weapon : MonoBehaviour
 
         Vector3 shootingDirection = CalculateDirectionAndSpread().normalized;
 
-        GameObject bullet = Instantiate(bulletPrefab,bulletSpawn.position,Quaternion.identity);
+        GameObject bullet = Instantiate(GetCurrentBullet(), bulletSpawn.position,Quaternion.identity);
 
         bullet.transform.forward = shootingDirection;
 
@@ -184,6 +188,19 @@ public class Weapon : MonoBehaviour
 
             Invoke("fireWeapon",shootingDelay);
         }
+    }
+
+    public GameObject GetCurrentBullet() 
+    {
+        if (_projectile.hasBloodLust)
+        {
+            return _projectile._bloodBullet;
+        }
+        else 
+        {
+            return bulletPrefab;
+        }
+
     }
 
     public void Reload()

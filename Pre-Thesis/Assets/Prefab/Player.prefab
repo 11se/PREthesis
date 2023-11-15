@@ -1913,6 +1913,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eba491899a9375147bb5cb87536fa9ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _bloodBullet: {fileID: 6099217783832196547, guid: 34cb69d4fb96ed74abca15612c02bb08,
+    type: 3}
   cam: {fileID: 438052147419904361}
   projectile: {fileID: 6099217783832196547, guid: c26eba9d75b4c7e46a993b9b4febd839,
     type: 3}
@@ -1923,6 +1925,7 @@ MonoBehaviour:
   arcRange: 1
   playerBlood: {fileID: 0}
   BloodPoint: 20
+  hasBloodLust: 0
 --- !u!114 &6715034107511476523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2283,12 +2286,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 464493703212168931, guid: 27dfe1884aaed5045815b89985222eb3,
         type: 3}
-      propertyPath: bulletPrefab
-      value: 
-      objectReference: {fileID: 6099217783832196547, guid: 34cb69d4fb96ed74abca15612c02bb08,
-        type: 3}
-    - target: {fileID: 464493703212168931, guid: 27dfe1884aaed5045815b89985222eb3,
-        type: 3}
       propertyPath: spreadIntensity
       value: 1
       objectReference: {fileID: 0}
@@ -2506,12 +2503,6 @@ PrefabInstance:
       propertyPath: _bulletLeft
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5158473142291380504, guid: d52554deb51c8f449ba3159fb6f8289c,
-        type: 3}
-      propertyPath: bulletPrefab
-      value: 
-      objectReference: {fileID: 6099217783832196547, guid: e261f828d6eb0c6409748ddb1b7e2300,
-        type: 3}
     - target: {fileID: 5158473142291380504, guid: d52554deb51c8f449ba3159fb6f8289c,
         type: 3}
       propertyPath: magazineSize
