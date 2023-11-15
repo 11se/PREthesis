@@ -20,17 +20,15 @@ public class HealthItem : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Player"))
         {
-            if(playerHealth.currentHealth < playerHealth.maxHealth)
+            if (other.gameObject.GetComponent<HealthCont>() is HealthCont healthcomp) 
             {
-                Destroy(gameObject);
-                playerHealth.currentHealth = playerHealth.currentHealth + health;
-                UpdateHealthText();
-            }         
+                if (healthcomp.currentHealth < healthcomp.maxHealth)
+                {
+                    healthcomp.currentHealth = healthcomp.currentHealth + health;
+                    healthcomp.UpdateHealthText();
+                    Destroy(gameObject);
+                }
+            }
         }
-    }
-    void UpdateHealthText()
-    {
-        healthText.SetText($"{(int)playerHealth.currentHealth}");
-        Debug.Log(currentHealth.ToString());
     }
 }

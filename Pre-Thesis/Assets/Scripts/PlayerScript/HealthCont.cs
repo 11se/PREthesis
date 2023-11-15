@@ -76,7 +76,7 @@ public class HealthCont : MonoBehaviour
         playerBlood.BloodLustBar.fillAmount = BloodBar;
     }*/
 
-    void UpdateHealthText()
+    public void UpdateHealthText()
     {
         float healthRate = (currentHealth / maxHealth);
         healthBar.fillAmount = healthRate;
