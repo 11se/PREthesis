@@ -20,7 +20,7 @@ public class HealthCont : MonoBehaviour
     public float BloodPoint = 20;
 
     [Header("UI Parameter")]
-    public Image healthText;
+    public Image healthBar;
     public Image BloodLustBar;
 
     public GameObject deathScreen;
@@ -29,7 +29,8 @@ public class HealthCont : MonoBehaviour
 
     public void Start()
     {
-        currentHealth = maxHealth;     
+        //currentHealth = maxHealth;
+        //playerHealth = GetComponent<currentHealth>();   
     }
 
     public void TakeDamage(float damage)
@@ -78,7 +79,8 @@ public class HealthCont : MonoBehaviour
 
     void UpdateHealthText()
     {
-        //Image = currentHealth.ToString("0");
+        //float HealthBar = (playerHealth.currentBlood / playerBlood.maxBlood);
+        //playerBlood.BloodLustBar.fillAmount = BloodBar;
     }
     private void Update()
     {

@@ -1882,7 +1882,7 @@ MonoBehaviour:
   currentBlood: 0
   maxBlood: 100
   BloodPoint: 20
-  healthText: {fileID: 0}
+  healthBar: {fileID: 0}
   BloodLustBar: {fileID: 0}
   deathScreen: {fileID: 0}
   player: {fileID: 8051085694619998486}
@@ -1918,7 +1918,7 @@ MonoBehaviour:
   cam: {fileID: 438052147419904361}
   projectile: {fileID: 6099217783832196547, guid: c26eba9d75b4c7e46a993b9b4febd839,
     type: 3}
-  fireBall: {fileID: 1799714862278276200, guid: 4af8579f8ed44d441a4b0d42dca93da5,
+  fireBall: {fileID: 5764357268717488110, guid: d8e40271e1df9084e8edffb85f40b754,
     type: 3}
   Firepoint: {fileID: 5856841029602902661}
   projectileSpeed: 30
