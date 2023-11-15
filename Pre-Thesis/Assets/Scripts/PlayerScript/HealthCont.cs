@@ -20,7 +20,7 @@ public class HealthCont : MonoBehaviour
     public float BloodPoint = 20;
 
     [Header("UI Parameter")]
-    public TMP_Text healthText;
+    public Image healthText;
     public Image BloodLustBar;
 
     public GameObject deathScreen;
@@ -78,7 +78,7 @@ public class HealthCont : MonoBehaviour
 
     void UpdateHealthText()
     {
-        healthText.text = currentHealth.ToString("0");
+        //Image = currentHealth.ToString("0");
     }
     private void Update()
     {

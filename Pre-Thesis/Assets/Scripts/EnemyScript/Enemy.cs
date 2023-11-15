@@ -104,7 +104,7 @@ public class Enemy : MonoBehaviour
             DropBloodPoint();
             //if (Spawner != null) Spawner.currentMonster.Remove(this.gameObject);
             Destroy(gameObject);
-            MosterDead.Play();
+            //MosterDead.Play();
         }
     }
     
