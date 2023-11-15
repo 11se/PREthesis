@@ -29,8 +29,7 @@ public class HealthCont : MonoBehaviour
 
     public void Start()
     {
-        //currentHealth = maxHealth;
-        //playerHealth = GetComponent<currentHealth>();   
+        currentHealth = maxHealth;
     }
 
     public void TakeDamage(float damage)
@@ -79,8 +78,8 @@ public class HealthCont : MonoBehaviour
 
     void UpdateHealthText()
     {
-        //float HealthBar = (playerHealth.currentBlood / playerBlood.maxBlood);
-        //playerBlood.BloodLustBar.fillAmount = BloodBar;
+        float healthRate = (currentHealth / maxHealth);
+        healthBar.fillAmount = healthRate;
     }
     private void Update()
     {
