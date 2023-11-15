@@ -1819,6 +1819,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24b5c7f92ad54774888015152cccc941, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _enemyBullet: {fileID: 0}
   projectileSpeed: 15
   MosterDead: {fileID: 139231597}
   stateMachine: {fileID: 139231593}
@@ -2604,6 +2605,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24b5c7f92ad54774888015152cccc941, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _enemyBullet: {fileID: 0}
   projectileSpeed: 15
   MosterDead: {fileID: 139231597}
   stateMachine: {fileID: 194199038}
@@ -3123,6 +3125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24b5c7f92ad54774888015152cccc941, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _enemyBullet: {fileID: 0}
   projectileSpeed: 15
   MosterDead: {fileID: 139231597}
   stateMachine: {fileID: 200439467}
@@ -4337,6 +4340,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24b5c7f92ad54774888015152cccc941, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _enemyBullet: {fileID: 0}
   projectileSpeed: 15
   MosterDead: {fileID: 139231597}
   stateMachine: {fileID: 274320838}
@@ -4920,6 +4924,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24b5c7f92ad54774888015152cccc941, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _enemyBullet: {fileID: 0}
   projectileSpeed: 15
   MosterDead: {fileID: 139231597}
   stateMachine: {fileID: 291735547}
@@ -5442,6 +5447,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24b5c7f92ad54774888015152cccc941, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _enemyBullet: {fileID: 0}
   projectileSpeed: 15
   MosterDead: {fileID: 311650536}
   stateMachine: {fileID: 311650532}
@@ -5697,6 +5703,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24b5c7f92ad54774888015152cccc941, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _enemyBullet: {fileID: 0}
   projectileSpeed: 15
   MosterDead: {fileID: 139231597}
   stateMachine: {fileID: 337902963}
@@ -10153,6 +10160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24b5c7f92ad54774888015152cccc941, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _enemyBullet: {fileID: 0}
   projectileSpeed: 15
   MosterDead: {fileID: 311650536}
   stateMachine: {fileID: 371012981}
@@ -11221,6 +11229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24b5c7f92ad54774888015152cccc941, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _enemyBullet: {fileID: 0}
   projectileSpeed: 15
   MosterDead: {fileID: 311650536}
   stateMachine: {fileID: 443483047}
@@ -12024,6 +12033,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24b5c7f92ad54774888015152cccc941, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _enemyBullet: {fileID: 0}
   projectileSpeed: 15
   MosterDead: {fileID: 311650536}
   stateMachine: {fileID: 515394085}
@@ -13155,6 +13165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24b5c7f92ad54774888015152cccc941, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _enemyBullet: {fileID: 0}
   projectileSpeed: 15
   MosterDead: {fileID: 311650536}
   stateMachine: {fileID: 613390841}
@@ -15381,6 +15392,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24b5c7f92ad54774888015152cccc941, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _enemyBullet: {fileID: 0}
   projectileSpeed: 15
   MosterDead: {fileID: 311650536}
   stateMachine: {fileID: 700671589}
@@ -16700,6 +16712,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24b5c7f92ad54774888015152cccc941, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _enemyBullet: {fileID: 0}
   projectileSpeed: 15
   MosterDead: {fileID: 311650536}
   stateMachine: {fileID: 788474188}
@@ -19382,6 +19395,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24b5c7f92ad54774888015152cccc941, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _enemyBullet: {fileID: 0}
   projectileSpeed: 15
   MosterDead: {fileID: 139231597}
   stateMachine: {fileID: 925564973}
@@ -25596,6 +25610,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24b5c7f92ad54774888015152cccc941, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _enemyBullet: {fileID: 0}
   projectileSpeed: 15
   MosterDead: {fileID: 311650536}
   stateMachine: {fileID: 1291243588}
@@ -28516,6 +28531,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24b5c7f92ad54774888015152cccc941, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _enemyBullet: {fileID: 0}
   projectileSpeed: 15
   MosterDead: {fileID: 139231597}
   stateMachine: {fileID: 1545642466}
@@ -33640,6 +33656,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24b5c7f92ad54774888015152cccc941, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _enemyBullet: {fileID: 0}
   projectileSpeed: 15
   MosterDead: {fileID: 311650536}
   stateMachine: {fileID: 1922883542}
@@ -35489,6 +35506,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24b5c7f92ad54774888015152cccc941, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _enemyBullet: {fileID: 0}
   projectileSpeed: 15
   MosterDead: {fileID: 139231597}
   stateMachine: {fileID: 2083470672}
@@ -36116,6 +36134,16 @@ PrefabInstance:
       propertyPath: hitMarker
       value: 
       objectReference: {fileID: 1051430892}
+    - target: {fileID: 1116781157574651440, guid: a2dd21d29fb1d314fb65f5ccf6af776c,
+        type: 3}
+      propertyPath: magazineSize
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 1116781157574651440, guid: a2dd21d29fb1d314fb65f5ccf6af776c,
+        type: 3}
+      propertyPath: bulletsPerBurst
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6126899941545630521, guid: a2dd21d29fb1d314fb65f5ccf6af776c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -36506,6 +36534,11 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: -0.25068855
       objectReference: {fileID: 0}
+    - target: {fileID: 6826465334533004262, guid: 83241a8e5625c754cb417f915282660b,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 1bc4ede386154f245be43fbdaeac8e27, type: 2}
     - target: {fileID: 8150548615984133677, guid: 83241a8e5625c754cb417f915282660b,
         type: 3}
       propertyPath: player
