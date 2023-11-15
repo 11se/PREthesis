@@ -532,8 +532,11 @@ MonoBehaviour:
   bulletPrefablifeTime: 1
   ReloadTime: 1
   magazineSize: 30
-  BulletsLeft: 0
+  _currentBullet: 0
+  _bulletLeft: 0
   isReloading: 0
+  hasInfiniteAmmo: 0
+  thisModel: 0
   currentshootingMode: 2
 --- !u!1 &8324847065793702412
 GameObject:

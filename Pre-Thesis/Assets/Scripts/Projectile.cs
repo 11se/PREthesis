@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
+    public GameObject _bloodBullet;
 
     public Camera cam;
     public GameObject projectile;
@@ -18,7 +19,7 @@ public class Projectile : MonoBehaviour
     public float BloodPoint = 20;
     
 
-    bool hasBloodLust = false;
+    public bool hasBloodLust = false;
 
     private bool rightHand;
     private Vector3 destination;
