@@ -5,9 +5,7 @@ using UnityEngine;
 
 public class HealthItem : MonoBehaviour
 {
-    HealthCont playerHealth;
-    public TMP_Text healthText;
-    public float currentHealth;
+    HealthCont playerHealth;   
 
     public float health = 15;
 

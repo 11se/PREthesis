@@ -496,7 +496,7 @@ Animator:
   m_GameObject: {fileID: 8137854845216376271}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2131848c748b65b46883db7efb4f9063, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -521,10 +521,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsShooting: 0
   ReadyToShoot: 0
-  shootingDelay: 0.1
+  shootingDelay: 0.3
   bulletsPerBurst: 1
   BurstBulletsLeft: 0
-  spreadIntensity: 3
+  spreadIntensity: 1
   bulletPrefab: {fileID: 6099217783832196547, guid: c26eba9d75b4c7e46a993b9b4febd839,
     type: 3}
   bulletSpawn: {fileID: 8948122548514420894}
@@ -533,10 +533,10 @@ MonoBehaviour:
   ReloadTime: 1
   magazineSize: 30
   _currentBullet: 0
-  _bulletLeft: 0
+  _bulletLeft: 60
   isReloading: 0
   hasInfiniteAmmo: 0
-  thisModel: 0
+  thisModel: 1
   currentshootingMode: 2
 --- !u!1 &8324847065793702412
 GameObject:

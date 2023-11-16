@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scene/URPBK.unity
     guid: de44fbb66fd0d7f49b8e7180e26ea09e
+  - enabled: 1
+    path: Assets/Scene/maplayout.unity
+    guid: 35bc2f39e43142843a283b194a5b33ba
   m_configObjects: {}

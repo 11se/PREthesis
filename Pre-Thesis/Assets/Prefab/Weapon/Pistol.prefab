@@ -82,11 +82,11 @@ MonoBehaviour:
   bulletPrefablifeTime: 1
   ReloadTime: 1.5
   magazineSize: 7
-  BulletsLeft: 0
+  _currentBullet: 0
+  _bulletLeft: 20
   isReloading: 0
-  spawnPosition: {x: 63.899, y: 2.682, z: -10.52}
-  spawnRotation: {x: 1.186, y: -271.253, z: -24.92}
-  thisWeaponModel: 0
+  hasInfiniteAmmo: 0
+  thisModel: 0
   currentshootingMode: 0
 --- !u!114 &2898280350064820631
 MonoBehaviour:

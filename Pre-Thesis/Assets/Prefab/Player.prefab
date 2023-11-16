@@ -224,6 +224,37 @@ Transform:
   - {fileID: 1094164599820360282}
   m_Father: {fileID: 789060252197075640}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1312357032361911947
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4252845031679093080}
+  m_Layer: 0
+  m_Name: ProjectileShootPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4252845031679093080
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1312357032361911947}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.00029223616, y: 0.9981921, z: 0.0599068, w: -0.004869361}
+  m_LocalPosition: {x: 0.098, y: -0.2059, z: 0.606}
+  m_LocalScale: {x: 1, y: 1.0000001, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6126899941545630521}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1587130431598223468
 GameObject:
   m_ObjectHideFlags: 0
@@ -630,9 +661,9 @@ MonoBehaviour:
   ReloadTime: 0.5
   magazineSize: 7
   _currentBullet: 0
-  _bulletLeft: 14
+  _bulletLeft: 0
   isReloading: 0
-  hasInfiniteAmmo: 1
+  hasInfiniteAmmo: 0
   thisModel: 0
   currentshootingMode: 0
 --- !u!114 &946246907262944194
@@ -1771,7 +1802,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8051085694619998486}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00029284944, y: -0.99819225, z: -0.059903473, w: -0.0048710634}
+  m_LocalRotation: {x: 0.00029223616, y: -0.9981921, z: -0.0599068, w: -0.004869361}
   m_LocalPosition: {x: 63.13874, y: 2.804456, z: -4.4509916}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1779,6 +1810,7 @@ Transform:
   - {fileID: 789060252197075640}
   - {fileID: 967977755672961191}
   - {fileID: 8502891968671886453}
+  - {fileID: 4252845031679093080}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -6.869, y: -180.559, z: 0}
 --- !u!143 &7920812564772425822
@@ -1848,7 +1880,7 @@ MonoBehaviour:
   groundMask:
     serializedVersion: 2
     m_Bits: 8
-  BloodLust: 0
+  BloodLust: 1
 --- !u!114 &5812246902008322962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1920,12 +1952,12 @@ MonoBehaviour:
     type: 3}
   fireBall: {fileID: 5764357268717488110, guid: d8e40271e1df9084e8edffb85f40b754,
     type: 3}
-  Firepoint: {fileID: 5856841029602902661}
+  Firepoint: {fileID: 4252845031679093080}
   projectileSpeed: 30
   arcRange: 1
-  playerBlood: {fileID: 0}
+  playerBlood: {fileID: 8660118677232257250}
   BloodPoint: 20
-  hasBloodLust: 0
+  hasBloodLust: 1
 --- !u!114 &6715034107511476523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1942,6 +1974,9 @@ MonoBehaviour:
   - {fileID: 2062846416499895456}
   - {fileID: 4470850826107373169}
   - {fileID: 1116781157574651440}
+  ImageWeapon1: {fileID: 0}
+  ImageWeapon2: {fileID: 0}
+  ImageWeapon3: {fileID: 0}
 --- !u!1 &8212359665906566523
 GameObject:
   m_ObjectHideFlags: 0
@@ -2286,6 +2321,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 464493703212168931, guid: 27dfe1884aaed5045815b89985222eb3,
         type: 3}
+      propertyPath: hasInfiniteAmmo
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 464493703212168931, guid: 27dfe1884aaed5045815b89985222eb3,
+        type: 3}
       propertyPath: spreadIntensity
       value: 1
       objectReference: {fileID: 0}
@@ -2298,7 +2338,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 2131848c748b65b46883db7efb4f9063, type: 2}
+      objectReference: {fileID: 9100000, guid: a0a595b95750dd545a1724d798e6c69b, type: 2}
     - target: {fileID: 8137854845216376271, guid: 27dfe1884aaed5045815b89985222eb3,
         type: 3}
       propertyPath: m_Name
@@ -2483,6 +2523,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1595398837648031337, guid: d52554deb51c8f449ba3159fb6f8289c,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: a0a595b95750dd545a1724d798e6c69b, type: 2}
     - target: {fileID: 5158473142291380504, guid: d52554deb51c8f449ba3159fb6f8289c,
         type: 3}
       propertyPath: HitMarker
@@ -2515,8 +2560,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5158473142291380504, guid: d52554deb51c8f449ba3159fb6f8289c,
         type: 3}
+      propertyPath: _currentBullet
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5158473142291380504, guid: d52554deb51c8f449ba3159fb6f8289c,
+        type: 3}
       propertyPath: bulletsPerBurst
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5158473142291380504, guid: d52554deb51c8f449ba3159fb6f8289c,
+        type: 3}
+      propertyPath: hasInfiniteAmmo
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5158473142291380504, guid: d52554deb51c8f449ba3159fb6f8289c,
         type: 3}

@@ -255,7 +255,7 @@ MonoBehaviour:
   shootingDelay: 0.2
   bulletsPerBurst: 1
   BurstBulletsLeft: 0
-  spreadIntensity: 5
+  spreadIntensity: 1
   bulletPrefab: {fileID: 6099217783832196547, guid: c26eba9d75b4c7e46a993b9b4febd839,
     type: 3}
   bulletSpawn: {fileID: 7698269407784058811}
@@ -264,7 +264,7 @@ MonoBehaviour:
   ReloadTime: 2
   magazineSize: 8
   _currentBullet: 0
-  _bulletLeft: 0
+  _bulletLeft: 15
   isReloading: 0
   hasInfiniteAmmo: 0
   thisModel: 0

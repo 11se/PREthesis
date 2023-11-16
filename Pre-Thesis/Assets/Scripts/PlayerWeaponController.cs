@@ -1,26 +1,38 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerWeaponController : MonoBehaviour
 {
     public Weapon[] weapons;
+    public GameObject ImageWeapon1;
+    public GameObject ImageWeapon2;
+    public GameObject ImageWeapon3;
 
     private int currentWeaponIndex = 0;
+    private void Start()
+    {       
+        
+    }
 
     void Update()
     {
         if (Input.GetKeyDown("1"))
         {
             SetActiveWeapon(0);
+            ImageWeapon1.SetActive(true);
         }
         if (Input.GetKeyDown("2"))
         {
             SetActiveWeapon(1);
+            ImageWeapon1.SetActive(true);
+
         }
         if (Input.GetKeyDown("3"))
         {
             SetActiveWeapon(2);
+            ImageWeapon1.SetActive(true);
         }
 
         if (Input.GetAxis("Mouse ScrollWheel") > 0f) // forward

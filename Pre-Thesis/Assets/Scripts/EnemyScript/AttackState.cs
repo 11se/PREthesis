@@ -7,7 +7,8 @@ public class AttackState : BaseState
     private float moveTimer;
     private float losePlayerTimer;
     private float shotTimer;
-    Animator anim;
+    private Animator anim;
+
 
     public override void Enter()
     {
@@ -32,7 +33,7 @@ public class AttackState : BaseState
             {
                 Shoot();
             }
-            if(moveTimer > Random.Range(3, 7))
+            if(moveTimer > Random.Range(1, 5))
             {
                 enemy.Agent.SetDestination(enemy.transform.position + (Random.insideUnitSphere * 5));
                 moveTimer = 0;
@@ -42,7 +43,7 @@ public class AttackState : BaseState
         else
         {
             losePlayerTimer += Time.deltaTime;
-            if(losePlayerTimer > 8)
+            if(losePlayerTimer > 5)
             {
                 //Change to search state.
                 stateMachine.ChangeState(new PatrolState()); ;
@@ -76,9 +77,10 @@ public class AttackState : BaseState
     }
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         
+
     }
 
     // Update is called once per frame

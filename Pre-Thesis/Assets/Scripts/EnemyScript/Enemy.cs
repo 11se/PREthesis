@@ -26,6 +26,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] private float Radius = 20;
     Vector3 Next_position;
     public GameObject BloodLustPoint;
+    public GameObject HealthITEM;
 
     //public Path path;
     [Header("Sigh Values")]
@@ -102,6 +103,7 @@ public class Enemy : MonoBehaviour
         if(HP <= 0)
         {
             DropBloodPoint();
+            DropHealth();
             //if (Spawner != null) Spawner.currentMonster.Remove(this.gameObject);
             Destroy(gameObject);
             //MosterDead.Play();
@@ -116,8 +118,15 @@ public class Enemy : MonoBehaviour
     void DropBloodPoint()
     {
         Vector3 position = transform.position;
-        GameObject BloodPoint = Instantiate(BloodLustPoint,position + new Vector3(0.0f,1.0f,0.0f), Quaternion.identity);
+        GameObject BloodPoint = Instantiate(BloodLustPoint,position + new Vector3(1.0f,0.5f,0.0f), Quaternion.identity);
         BloodPoint.SetActive(true);
+        Destroy(gameObject);
+    }
+    void DropHealth()
+    {
+        Vector3 position = transform.position;
+        GameObject Health = Instantiate(HealthITEM,position + new Vector3(0.0f,0.5f,0.0f), Quaternion.identity);
+        Health.SetActive(true);
         Destroy(gameObject);
     }
 
