@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Scene/MainMenu.unity
     guid: 03f55680eaa0bae4d8bc833a8ccbd3b0
   - enabled: 1
-    path: Assets/BackUP/URPBK.unity
+    path: Assets/Scene/URPBK.unity
     guid: de44fbb66fd0d7f49b8e7180e26ea09e
   m_configObjects: {}

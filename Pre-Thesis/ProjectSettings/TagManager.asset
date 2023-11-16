@@ -8,6 +8,7 @@ TagManager:
   - Construction
   - Target
   - Bullet
+  - Ground
   layers:
   - Default
   - TransparentFX
