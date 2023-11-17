@@ -2483,7 +2483,7 @@ Transform:
   m_GameObject: {fileID: 59659242}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 16.79, y: 3.93, z: 189.23}
+  m_LocalPosition: {x: 13.9, y: 3.93, z: 189.23}
   m_LocalScale: {x: 1, y: 3.22398, z: 6.8717213}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -28296,12 +28296,17 @@ PrefabInstance:
     - target: {fileID: 2834234287784628767, guid: 38a1dbd7bfe81d44bba1d1b33a4b8f34,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3051491981012930296, guid: 38a1dbd7bfe81d44bba1d1b33a4b8f34,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4182011369057563162, guid: 38a1dbd7bfe81d44bba1d1b33a4b8f34,
+        type: 3}
+      propertyPath: m_CullTransparentMesh
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6328116421387827831, guid: 38a1dbd7bfe81d44bba1d1b33a4b8f34,
         type: 3}
@@ -28312,6 +28317,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6591121276633144252, guid: 38a1dbd7bfe81d44bba1d1b33a4b8f34,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

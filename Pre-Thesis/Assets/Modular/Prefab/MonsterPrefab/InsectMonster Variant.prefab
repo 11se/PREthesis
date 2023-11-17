@@ -341,7 +341,7 @@ Animator:
   m_GameObject: {fileID: 2359794668081515689}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 82c785e2de6198d4784c66aad1276e5d, type: 2}
+  m_Controller: {fileID: 9100000, guid: 1bc4ede386154f245be43fbdaeac8e27, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -396,7 +396,9 @@ MonoBehaviour:
   HP: 200
   playerTarget: {fileID: 0}
   Radius: 20
-  BloodLustPoint: {fileID: 1145420793472228139, guid: 71f8c553acc063d4fbd98976a41608fa,
+  BloodLustPoint: {fileID: 8050346499794387138, guid: f99949ad1ec80f94e910db06c77222a6,
+    type: 3}
+  HealthITEM: {fileID: 8050346499794387138, guid: 04789ae12228da94ca6b7e4feeded66d,
     type: 3}
   sightDistance: 20
   fieldofView: 85
