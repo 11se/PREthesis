@@ -521,7 +521,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsShooting: 0
   ReadyToShoot: 0
-  shootingDelay: 0.3
+  shootingDelay: 0.1
   bulletsPerBurst: 1
   BurstBulletsLeft: 0
   spreadIntensity: 1
