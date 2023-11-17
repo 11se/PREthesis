@@ -106,7 +106,7 @@ public class Enemy : MonoBehaviour
             DropHealth();
             //if (Spawner != null) Spawner.currentMonster.Remove(this.gameObject);
             Destroy(gameObject);
-            //MosterDead.Play();
+            MosterDead.Play();
         }
     }
     
