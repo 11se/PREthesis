@@ -224,4 +224,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82632c70c1c6560458fc8f95b9207054, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BloodPoint: 25
+  BloodPoint: 30

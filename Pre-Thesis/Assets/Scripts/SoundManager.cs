@@ -19,6 +19,8 @@ public class SoundManager : MonoBehaviour
 
     public AudioSource EmptySound;
     public AudioSource Hit;
+
+    public AudioSource Pickup;
     
     
 

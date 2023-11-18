@@ -24,6 +24,7 @@ public class HealthItem : MonoBehaviour
                 {
                     healthcomp.currentHealth = healthcomp.currentHealth + health;
                     healthcomp.UpdateHealthText();
+                    SoundManager.instance.Pickup.Play();
                     Destroy(gameObject);
                 }
             }

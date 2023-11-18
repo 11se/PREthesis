@@ -1171,13 +1171,13 @@ MonoBehaviour:
   m_RequiresOpaqueTextureOption: 2
   m_CameraType: 0
   m_Cameras: []
-  m_RendererIndex: 0
+  m_RendererIndex: -1
   m_VolumeLayerMask:
     serializedVersion: 2
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
@@ -1872,7 +1872,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 163c5fec959e23e48bb49e435c6c6063, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 8
+  speed: 10
   gravity: -19.62
   jumpHeight: 1.5
   groundCheck: {fileID: 8502891968671886453}
@@ -1974,9 +1974,7 @@ MonoBehaviour:
   - {fileID: 2062846416499895456}
   - {fileID: 4470850826107373169}
   - {fileID: 1116781157574651440}
-  ImageWeapon1: {fileID: 0}
-  ImageWeapon2: {fileID: 0}
-  ImageWeapon3: {fileID: 0}
+  Icon: []
 --- !u!1 &8212359665906566523
 GameObject:
   m_ObjectHideFlags: 0
@@ -2551,7 +2549,7 @@ PrefabInstance:
     - target: {fileID: 5158473142291380504, guid: d52554deb51c8f449ba3159fb6f8289c,
         type: 3}
       propertyPath: magazineSize
-      value: 36
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 5158473142291380504, guid: d52554deb51c8f449ba3159fb6f8289c,
         type: 3}
@@ -2561,12 +2559,12 @@ PrefabInstance:
     - target: {fileID: 5158473142291380504, guid: d52554deb51c8f449ba3159fb6f8289c,
         type: 3}
       propertyPath: _currentBullet
-      value: 9
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5158473142291380504, guid: d52554deb51c8f449ba3159fb6f8289c,
         type: 3}
       propertyPath: bulletsPerBurst
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5158473142291380504, guid: d52554deb51c8f449ba3159fb6f8289c,
         type: 3}
@@ -2576,7 +2574,7 @@ PrefabInstance:
     - target: {fileID: 5158473142291380504, guid: d52554deb51c8f449ba3159fb6f8289c,
         type: 3}
       propertyPath: spreadIntensity
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5158473142291380504, guid: d52554deb51c8f449ba3159fb6f8289c,
         type: 3}

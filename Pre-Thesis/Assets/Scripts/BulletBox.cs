@@ -15,6 +15,7 @@ public class BulletBox : MonoBehaviour
         if (other.gameObject.CompareTag("Player")) 
         {
             other.gameObject.GetComponent<PlayerWeaponController>().PickUpWeapon(weaponModel, bulletAmount);
+            SoundManager.instance.Pickup.Play();
             Destroy(gameObject);
         }
     }

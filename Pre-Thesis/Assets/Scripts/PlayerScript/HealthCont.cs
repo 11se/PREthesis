@@ -7,6 +7,8 @@ using UnityEngine.LowLevel;
 
 public class HealthCont : MonoBehaviour
 {
+    
+
     [Header("Health Parameter")]
     public float maxHealth = 150f;
     public float currentHealth;
@@ -37,6 +39,7 @@ public class HealthCont : MonoBehaviour
         Debug.Log("damage");
         BloodUI.SetTrigger("OnAttack");
         StartCoroutine(SmoothDecreaseDuration(damage));
+        
     }
 
     public IEnumerator SmoothDecreaseDuration(float damage)

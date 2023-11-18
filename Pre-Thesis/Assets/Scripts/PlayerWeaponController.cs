@@ -6,11 +6,10 @@ using UnityEngine.UI;
 public class PlayerWeaponController : MonoBehaviour
 {
     public Weapon[] weapons;
-    public GameObject ImageWeapon1;
-    public GameObject ImageWeapon2;
-    public GameObject ImageWeapon3;
+    public Image[] Icon;
 
     private int currentWeaponIndex = 0;
+    private int currentIconIndex = 0;
     private void Start()
     {       
         
@@ -21,18 +20,18 @@ public class PlayerWeaponController : MonoBehaviour
         if (Input.GetKeyDown("1"))
         {
             SetActiveWeapon(0);
-            ImageWeapon1.SetActive(true);
+            SetActiveIcon(0);
         }
         if (Input.GetKeyDown("2"))
         {
             SetActiveWeapon(1);
-            ImageWeapon1.SetActive(true);
+            SetActiveIcon(1);
 
         }
         if (Input.GetKeyDown("3"))
         {
             SetActiveWeapon(2);
-            ImageWeapon1.SetActive(true);
+            SetActiveIcon(2);
         }
 
         if (Input.GetAxis("Mouse ScrollWheel") > 0f) // forward
@@ -59,6 +58,7 @@ public class PlayerWeaponController : MonoBehaviour
     {
         return weapons[currentWeaponIndex];
     }
+    
 
     public void PickUpWeapon(Weapon.WeaponModel type, int amount) 
     {
@@ -84,6 +84,23 @@ public class PlayerWeaponController : MonoBehaviour
             else 
             {
                 weapons[i].gameObject.SetActive(false);
+            }
+
+        }
+    }
+    private void SetActiveIcon(int index) 
+    {
+        currentIconIndex = index;
+
+        for (int i = 0; i < Icon.Length; i++)
+        {
+            if (index == i)
+            {
+                Icon[i].gameObject.SetActive(true);
+            }
+            else 
+            {
+                Icon[i].gameObject.SetActive(false);
             }
 
         }

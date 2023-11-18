@@ -26,6 +26,7 @@ public class BloodLustItem : MonoBehaviour
         {
             player.playerBlood.currentBlood += BloodPoint;
             player.UpdateBloodText();
+            SoundManager.instance.Pickup.Play();
             Destroy(gameObject);
           
         }
