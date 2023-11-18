@@ -69000,6 +69000,11 @@ PrefabInstance:
       propertyPath: BloodLustBar
       value: 
       objectReference: {fileID: 1831442064}
+    - target: {fileID: 8782059819650755558, guid: a2dd21d29fb1d314fb65f5ccf6af776c,
+        type: 3}
+      propertyPath: jumpHeight
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 9213460917089139170, guid: a2dd21d29fb1d314fb65f5ccf6af776c,
         type: 3}
       propertyPath: m_LocalPosition.x
