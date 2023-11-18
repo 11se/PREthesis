@@ -21,6 +21,7 @@ public class SoundManager : MonoBehaviour
     public AudioSource Hit;
 
     public AudioSource Pickup;
+    public AudioSource BloodLustUseSound;
     
     
 

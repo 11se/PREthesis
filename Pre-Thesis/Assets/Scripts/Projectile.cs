@@ -57,7 +57,7 @@ public class Projectile : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Q))
             {
                 hasBloodLust = true;
-                
+                SoundManager.instance.BloodLustUseSound.Play();
                 currentBloodLustCoolDown = maxBloodCooldown;
                 UpdateBloodText();
             }
