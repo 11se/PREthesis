@@ -64,15 +64,15 @@ Material:
     - _CastShadows: 1
     - _Cull: 2
     - _DstBlend: 10
-    - _FullscreenIntensity: 0.516
+    - _FullscreenIntensity: 0
     - _QueueControl: 0
     - _QueueOffset: 0
     - _SrcBlend: 5
     - _Surface: 1
-    - _VignetteIntensity: 0.563
-    - _VignetteRadiusPower: 8
+    - _VignetteIntensity: 0.7
+    - _VignetteRadiusPower: 3.84
     - _VoronoiPower: 1
-    - _VoronoiScale: 4.28
+    - _VoronoiScale: 2
     - _VoronoiSpeed: 1
     - _ZTest: 4
     - _ZWrite: 0

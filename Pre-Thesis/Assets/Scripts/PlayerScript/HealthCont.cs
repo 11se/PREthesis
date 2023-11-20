@@ -7,7 +7,7 @@ using UnityEngine.LowLevel;
 
 public class HealthCont : MonoBehaviour
 {
-    
+    public HURTEFXX hurtfx;
 
     [Header("Health Parameter")]
     public float maxHealth = 150f;
@@ -54,7 +54,7 @@ public class HealthCont : MonoBehaviour
             elapsedTime += Time.deltaTime;
 
             UpdateHealthText();
-
+            hurtfx.Onhurt(currentHealth <= 50);
             if(currentHealth <= 0)
             {
                 currentHealth = 0;
