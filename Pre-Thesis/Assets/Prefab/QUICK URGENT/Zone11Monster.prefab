@@ -15,7 +15,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4470555307091272465
 Transform:
   m_ObjectHideFlags: 0
@@ -46,7 +46,7 @@ Transform:
   - {fileID: 555394789575891860}
   - {fileID: 5676889590146482521}
   - {fileID: 1995720812481846036}
-  - {fileID: 6419961807250663137}
+  - {fileID: 2463042147106537662}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &375145673469184074
@@ -72,6 +72,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4003830402049466025, guid: d11c913d41e497b46a7db072eea1af25,
+        type: 3}
+      propertyPath: MosterDead
+      value: 
+      objectReference: {fileID: 6226227848525259953}
     - target: {fileID: 7471234885381461584, guid: d11c913d41e497b46a7db072eea1af25,
         type: 3}
       propertyPath: m_Name
@@ -376,7 +381,7 @@ PrefabInstance:
         type: 3}
       propertyPath: MosterDead
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 6226227848525259953}
     - target: {fileID: 8105883785870556388, guid: e28b568685330704da4f61a9944deea4,
         type: 3}
       propertyPath: m_Name
@@ -496,6 +501,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4003830402049466025, guid: d11c913d41e497b46a7db072eea1af25,
+        type: 3}
+      propertyPath: MosterDead
+      value: 
+      objectReference: {fileID: 6226227848525259953}
     - target: {fileID: 7471234885381461584, guid: d11c913d41e497b46a7db072eea1af25,
         type: 3}
       propertyPath: m_Name
@@ -596,6 +606,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4003830402049466025, guid: d11c913d41e497b46a7db072eea1af25,
+        type: 3}
+      propertyPath: MosterDead
+      value: 
+      objectReference: {fileID: 6226227848525259953}
     - target: {fileID: 7471234885381461584, guid: d11c913d41e497b46a7db072eea1af25,
         type: 3}
       propertyPath: m_Name
@@ -890,7 +905,7 @@ PrefabInstance:
         type: 3}
       propertyPath: MosterDead
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 6226227848525259953}
     - target: {fileID: 8105883785870556388, guid: e28b568685330704da4f61a9944deea4,
         type: 3}
       propertyPath: m_Name
@@ -1199,7 +1214,7 @@ PrefabInstance:
         type: 3}
       propertyPath: MosterDead
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 6226227848525259953}
     - target: {fileID: 8105883785870556388, guid: e28b568685330704da4f61a9944deea4,
         type: 3}
       propertyPath: m_Name
@@ -1508,7 +1523,7 @@ PrefabInstance:
         type: 3}
       propertyPath: MosterDead
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 6226227848525259953}
     - target: {fileID: 8105883785870556388, guid: e28b568685330704da4f61a9944deea4,
         type: 3}
       propertyPath: m_Name
@@ -1628,6 +1643,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4003830402049466025, guid: d11c913d41e497b46a7db072eea1af25,
+        type: 3}
+      propertyPath: MosterDead
+      value: 
+      objectReference: {fileID: 6226227848525259953}
     - target: {fileID: 7471234885381461584, guid: d11c913d41e497b46a7db072eea1af25,
         type: 3}
       propertyPath: m_Name
@@ -1641,7 +1661,7 @@ PrefabInstance:
     - target: {fileID: 7846669300832881898, guid: d11c913d41e497b46a7db072eea1af25,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -115.450264
+      value: -27.1
       objectReference: {fileID: 0}
     - target: {fileID: 7846669300832881898, guid: d11c913d41e497b46a7db072eea1af25,
         type: 3}
@@ -1651,7 +1671,7 @@ PrefabInstance:
     - target: {fileID: 7846669300832881898, guid: d11c913d41e497b46a7db072eea1af25,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 42.30005
+      value: 42.3
       objectReference: {fileID: 0}
     - target: {fileID: 7846669300832881898, guid: d11c913d41e497b46a7db072eea1af25,
         type: 3}
@@ -1922,7 +1942,7 @@ PrefabInstance:
         type: 3}
       propertyPath: MosterDead
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 6226227848525259953}
     - target: {fileID: 8105883785870556388, guid: e28b568685330704da4f61a9944deea4,
         type: 3}
       propertyPath: m_Name
@@ -1951,7 +1971,7 @@ PrefabInstance:
     - target: {fileID: 8878339754628343390, guid: e28b568685330704da4f61a9944deea4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 30.465797
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8878339754628343390, guid: e28b568685330704da4f61a9944deea4,
         type: 3}
@@ -1961,7 +1981,7 @@ PrefabInstance:
     - target: {fileID: 8878339754628343390, guid: e28b568685330704da4f61a9944deea4,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 16.779572
+      value: 16.8
       objectReference: {fileID: 0}
     - target: {fileID: 8878339754628343390, guid: e28b568685330704da4f61a9944deea4,
         type: 3}
@@ -2241,7 +2261,7 @@ PrefabInstance:
         type: 3}
       propertyPath: MosterDead
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 6226227848525259953}
     - target: {fileID: 8105883785870556388, guid: e28b568685330704da4f61a9944deea4,
         type: 3}
       propertyPath: m_Name
@@ -2550,7 +2570,7 @@ PrefabInstance:
         type: 3}
       propertyPath: MosterDead
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 6226227848525259953}
     - target: {fileID: 8105883785870556388, guid: e28b568685330704da4f61a9944deea4,
         type: 3}
       propertyPath: m_Name
@@ -2636,9 +2656,15 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e28b568685330704da4f61a9944deea4, type: 3}
---- !u!4 &6419961807250663137 stripped
+--- !u!4 &2463042147106537662 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8878339754628343390, guid: e28b568685330704da4f61a9944deea4,
+    type: 3}
+  m_PrefabInstance: {fileID: 6419961807250663136}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &6226227848525259953 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1112468282750665297, guid: e28b568685330704da4f61a9944deea4,
     type: 3}
   m_PrefabInstance: {fileID: 6419961807250663136}
   m_PrefabAsset: {fileID: 0}
@@ -2859,7 +2885,7 @@ PrefabInstance:
         type: 3}
       propertyPath: MosterDead
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 6226227848525259953}
     - target: {fileID: 8105883785870556388, guid: e28b568685330704da4f61a9944deea4,
         type: 3}
       propertyPath: m_Name
@@ -3178,7 +3204,7 @@ PrefabInstance:
         type: 3}
       propertyPath: MosterDead
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 6226227848525259953}
     - target: {fileID: 8105883785870556388, guid: e28b568685330704da4f61a9944deea4,
         type: 3}
       propertyPath: m_Name
@@ -3487,7 +3513,7 @@ PrefabInstance:
         type: 3}
       propertyPath: MosterDead
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 6226227848525259953}
     - target: {fileID: 8105883785870556388, guid: e28b568685330704da4f61a9944deea4,
         type: 3}
       propertyPath: m_Name
@@ -3516,7 +3542,7 @@ PrefabInstance:
     - target: {fileID: 8878339754628343390, guid: e28b568685330704da4f61a9944deea4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 30.465927
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8878339754628343390, guid: e28b568685330704da4f61a9944deea4,
         type: 3}
@@ -3526,7 +3552,7 @@ PrefabInstance:
     - target: {fileID: 8878339754628343390, guid: e28b568685330704da4f61a9944deea4,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 65.77957
+      value: 65.8
       objectReference: {fileID: 0}
     - target: {fileID: 8878339754628343390, guid: e28b568685330704da4f61a9944deea4,
         type: 3}
@@ -3607,6 +3633,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4003830402049466025, guid: d11c913d41e497b46a7db072eea1af25,
+        type: 3}
+      propertyPath: MosterDead
+      value: 
+      objectReference: {fileID: 6226227848525259953}
     - target: {fileID: 7471234885381461584, guid: d11c913d41e497b46a7db072eea1af25,
         type: 3}
       propertyPath: m_Name
@@ -3620,7 +3651,7 @@ PrefabInstance:
     - target: {fileID: 7846669300832881898, guid: d11c913d41e497b46a7db072eea1af25,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -115.450005
+      value: -27.1
       objectReference: {fileID: 0}
     - target: {fileID: 7846669300832881898, guid: d11c913d41e497b46a7db072eea1af25,
         type: 3}
@@ -3630,7 +3661,7 @@ PrefabInstance:
     - target: {fileID: 7846669300832881898, guid: d11c913d41e497b46a7db072eea1af25,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 91.30008
+      value: 91.3
       objectReference: {fileID: 0}
     - target: {fileID: 7846669300832881898, guid: d11c913d41e497b46a7db072eea1af25,
         type: 3}
@@ -3911,7 +3942,7 @@ PrefabInstance:
         type: 3}
       propertyPath: MosterDead
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 6226227848525259953}
     - target: {fileID: 8105883785870556388, guid: e28b568685330704da4f61a9944deea4,
         type: 3}
       propertyPath: m_Name
@@ -4220,7 +4251,7 @@ PrefabInstance:
         type: 3}
       propertyPath: MosterDead
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 6226227848525259953}
     - target: {fileID: 8105883785870556388, guid: e28b568685330704da4f61a9944deea4,
         type: 3}
       propertyPath: m_Name
@@ -4529,7 +4560,7 @@ PrefabInstance:
         type: 3}
       propertyPath: MosterDead
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 6226227848525259953}
     - target: {fileID: 8105883785870556388, guid: e28b568685330704da4f61a9944deea4,
         type: 3}
       propertyPath: m_Name

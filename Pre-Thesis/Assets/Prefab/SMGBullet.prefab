@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7629803154460147448}
   - component: {fileID: -4519254704687106855}
   m_Layer: 0
-  m_Name: SMGBullet
+  m_Name: SMGBULLET
   m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32,7 +32,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.0000014603138, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 29.3748, y: 2.3332, z: 50.2534}
-  m_LocalScale: {x: 0.13811432, y: 0.13811432, z: 0.13811432}
+  m_LocalScale: {x: 0.06461542, y: 0.06461542, z: 0.06461542}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4098257624498252690}
@@ -66,7 +66,7 @@ MeshRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: cce4777615e44e94db52737bc081351f, type: 2}
+  - {fileID: 2100000, guid: 5e80781fc5bfbd94dbad452f6fcdb3d4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -150,8 +150,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bcfc4bda46432d43a12b9890e531ef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletDamage: 100
-  impactVFX: {fileID: 3148224593243043179, guid: 5672fb9dc4ce56c4dbfdd8d5d0dc2146,
+  bulletDamage: 60
+  impactVFX: {fileID: 3148224593243043179, guid: b9bac39ec36787547978790272b0e746,
     type: 3}
 --- !u!96 &-4519254704687106855
 TrailRenderer:
@@ -310,7 +310,7 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 1, g: 0, b: 0.008334637, a: 1}
+  m_Color: {r: 1, g: 0.7273448, b: 0, a: 1}
   m_Intensity: 10
   m_Range: 5
   m_SpotAngle: 30

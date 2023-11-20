@@ -151,14 +151,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 741716240217762113}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.38682652, y: 0.06654985, z: 0.9052656, w: -0.16257468}
-  m_LocalPosition: {x: -0.0020183336, y: 0, z: 3.7252902e-11}
+  m_LocalRotation: {x: -0.2382693, y: 0.032227095, z: 0.9521782, w: -0.18853636}
+  m_LocalPosition: {x: -0.00227, y: -0.00008, z: 0.00058}
   m_LocalScale: {x: 1.0000002, y: 1.0000008, z: 1.0000002}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2316083120129442117}
   m_Father: {fileID: 4426987875664118557}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 1.632, y: -27.781, z: -158.004}
 --- !u!1 &1144099460398544972
 GameObject:
   m_ObjectHideFlags: 0
@@ -652,7 +652,7 @@ MonoBehaviour:
   shootingDelay: 0.3
   bulletsPerBurst: 1
   BurstBulletsLeft: 0
-  spreadIntensity: 1
+  spreadIntensity: 0.5
   bulletPrefab: {fileID: 6099217783832196547, guid: c26eba9d75b4c7e46a993b9b4febd839,
     type: 3}
   bulletSpawn: {fileID: 2683212524115754933}
@@ -955,14 +955,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5488838851715424476}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.5747081, y: 0.059857085, z: 0.8147568, w: -0.047948677}
-  m_LocalPosition: {x: 0.0020183336, y: 0, z: 3.7252902e-11}
+  m_LocalRotation: {x: 0.69635963, y: 0.06247916, z: 0.7112735, w: -0.072593145}
+  m_LocalPosition: {x: 0.00156, y: 0.00007, z: -0.0007}
   m_LocalScale: {x: 1.0000004, y: 1.0000008, z: 1.0000002}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8189441422558548097}
   m_Father: {fileID: 4426987875664118557}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -10.952, y: 88.695, z: -179.052}
 --- !u!1 &5554112749704272601
 GameObject:
   m_ObjectHideFlags: 0
@@ -1174,14 +1174,14 @@ MonoBehaviour:
   m_RendererIndex: -1
   m_VolumeLayerMask:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 4294967295
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
   m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
-  m_Dithering: 0
+  m_Dithering: 1
   m_ClearDepth: 1
   m_AllowXRRendering: 1
   m_AllowHDROutput: 1
@@ -1192,12 +1192,12 @@ MonoBehaviour:
   m_RequiresColorTexture: 0
   m_Version: 2
   m_TaaSettings:
-    quality: 3
+    quality: 4
     frameInfluence: 0.1
     jitterScale: 1
     mipBias: 0
     varianceClampScale: 0.9
-    contrastAdaptiveSharpening: 0
+    contrastAdaptiveSharpening: 1
 --- !u!1 &6169259037577555465
 GameObject:
   m_ObjectHideFlags: 0
@@ -1874,7 +1874,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   gravity: -19.62
-  jumpHeight: 1.5
+  jumpHeight: 2
   groundCheck: {fileID: 8502891968671886453}
   groundDistance: 0.4
   groundMask:
@@ -1974,7 +1974,10 @@ MonoBehaviour:
   - {fileID: 2062846416499895456}
   - {fileID: 4470850826107373169}
   - {fileID: 1116781157574651440}
-  Icon: []
+  Icon:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &8212359665906566523
 GameObject:
   m_ObjectHideFlags: 0
@@ -2319,6 +2322,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 464493703212168931, guid: 27dfe1884aaed5045815b89985222eb3,
         type: 3}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: 6099217783832196547, guid: b192b1f3feb1bb54fb5f8c2ff951829c,
+        type: 3}
+    - target: {fileID: 464493703212168931, guid: 27dfe1884aaed5045815b89985222eb3,
+        type: 3}
       propertyPath: hasInfiniteAmmo
       value: 0
       objectReference: {fileID: 0}
@@ -2336,7 +2345,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: a0a595b95750dd545a1724d798e6c69b, type: 2}
+      objectReference: {fileID: 9100000, guid: 2131848c748b65b46883db7efb4f9063, type: 2}
     - target: {fileID: 8137854845216376271, guid: 27dfe1884aaed5045815b89985222eb3,
         type: 3}
       propertyPath: m_Name
@@ -2525,7 +2534,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: a0a595b95750dd545a1724d798e6c69b, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 5158473142291380504, guid: d52554deb51c8f449ba3159fb6f8289c,
         type: 3}
       propertyPath: HitMarker
@@ -2549,7 +2558,7 @@ PrefabInstance:
     - target: {fileID: 5158473142291380504, guid: d52554deb51c8f449ba3159fb6f8289c,
         type: 3}
       propertyPath: magazineSize
-      value: 15
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5158473142291380504, guid: d52554deb51c8f449ba3159fb6f8289c,
         type: 3}
@@ -2574,7 +2583,7 @@ PrefabInstance:
     - target: {fileID: 5158473142291380504, guid: d52554deb51c8f449ba3159fb6f8289c,
         type: 3}
       propertyPath: spreadIntensity
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5158473142291380504, guid: d52554deb51c8f449ba3159fb6f8289c,
         type: 3}

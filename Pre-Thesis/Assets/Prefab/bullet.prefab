@@ -150,7 +150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bcfc4bda46432d43a12b9890e531ef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletDamage: 50
+  bulletDamage: 30
   impactVFX: {fileID: 3148224593243043179, guid: b9bac39ec36787547978790272b0e746,
     type: 3}
 --- !u!96 &-4519254704687106855
