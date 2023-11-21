@@ -166,7 +166,7 @@ public class Weapon : MonoBehaviour
 
         Vector3 shootingDirection = CalculateDirectionAndSpread().normalized;
 
-        GameObject bullet = Instantiate(GetCurrentBullet(), bulletSpawn.position,this.transform.rotation);
+        GameObject bullet = Instantiate(GetCurrentBullet(), bulletSpawn.position,Quaternion.identity);
 
         bullet.transform.forward = shootingDirection;
 
