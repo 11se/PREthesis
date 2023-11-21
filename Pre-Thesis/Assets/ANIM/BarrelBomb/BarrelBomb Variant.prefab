@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 3752439923919924329}
   - component: {fileID: 6589361541983739617}
   - component: {fileID: 8413440413276255071}
-  - component: {fileID: 3495449342012833907}
   m_Layer: 0
   m_Name: EffectBomb
   m_TagString: Untagged
@@ -4887,27 +4886,6 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
---- !u!95 &3495449342012833907
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4622000231712797465}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b2b1f05e81fbaf846a3b75eb73e84dfc, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &3444788913535824059
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5018,11 +4996,7 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 3752439923919924329}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 733744674030666453, guid: 9cc4bfdbfbc157143962bcba8ca8a484,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1892738759715080386}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9cc4bfdbfbc157143962bcba8ca8a484, type: 3}
 --- !u!4 &2688131367742151127 stripped
 Transform:
@@ -5030,30 +5004,3 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 3444788913535824059}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2729341521822184046 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 733744674030666453, guid: 9cc4bfdbfbc157143962bcba8ca8a484,
-    type: 3}
-  m_PrefabInstance: {fileID: 3444788913535824059}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &1892738759715080386
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2729341521822184046}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2500bd7927bb51544ab0e5359f7ae3d7, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
