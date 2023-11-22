@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 709084365}
-  m_IndirectSpecularColor: {r: 0.17310967, g: 0.2163595, b: 0.29836968, a: 1}
+  m_IndirectSpecularColor: {r: 0.1731101, g: 0.21636018, b: 0.29837102, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -12042,9 +12042,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4210758b850dd3f4e8ba19d80814fe22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Amount: 0.002
-  Frequency: 10
-  Smooth: 10
 --- !u!1 &770741047
 GameObject:
   m_ObjectHideFlags: 0
@@ -18297,6 +18294,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BarrelBomb Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 4622000231712797465, guid: 8ee12d385f4b4b241ad740e3d80854e3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
