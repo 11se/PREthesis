@@ -7,7 +7,7 @@ public class MainMenu : MonoBehaviour
 {
     public void PlayGame()
     {
-        SceneManager.LoadSceneAsync("URPBK");
+        SceneManager.LoadSceneAsync("CutSceneIntro");
     }
     public void quitGame()
     {
