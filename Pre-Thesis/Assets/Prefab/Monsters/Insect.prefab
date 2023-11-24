@@ -394,7 +394,7 @@ MonoBehaviour:
   Radius: 20
   BloodLustPoint: {fileID: 8050346499794387138, guid: f99949ad1ec80f94e910db06c77222a6,
     type: 3}
-  HealthITEM: {fileID: 8050346499794387138, guid: 04789ae12228da94ca6b7e4feeded66d,
+  HealthITEM: {fileID: 1611250181616201171, guid: 585980162264da8479186647ae8f2317,
     type: 3}
   sightDistance: 20
   fieldofView: 85

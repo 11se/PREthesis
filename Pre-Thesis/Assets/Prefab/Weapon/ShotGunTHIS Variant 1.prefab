@@ -72,37 +72,37 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: ddb0d6883d945974785f46e2183ec74d,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.6056809
+      value: 0.5158084
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ddb0d6883d945974785f46e2183ec74d,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.35575658
+      value: -0.56390905
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ddb0d6883d945974785f46e2183ec74d,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.40715402
+      value: 0.47002557
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ddb0d6883d945974785f46e2183ec74d,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.5837924
+      value: 0.4416155
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ddb0d6883d945974785f46e2183ec74d,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -2.547
+      value: -94.528
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ddb0d6883d945974785f46e2183ec74d,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 65.434
+      value: 9.608002
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ddb0d6883d945974785f46e2183ec74d,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 86.255
+      value: 70.743
       objectReference: {fileID: 0}
     - target: {fileID: -7335523394474502049, guid: ddb0d6883d945974785f46e2183ec74d,
         type: 3}
@@ -157,7 +157,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ddb0d6883d945974785f46e2183ec74d,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1073680398507191922, guid: ddb0d6883d945974785f46e2183ec74d,
         type: 3}
