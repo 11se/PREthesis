@@ -2220,7 +2220,7 @@ PrefabInstance:
     - target: {fileID: 464493703212168931, guid: 27dfe1884aaed5045815b89985222eb3,
         type: 3}
       propertyPath: spreadIntensity
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1950336476596556348, guid: 27dfe1884aaed5045815b89985222eb3,
         type: 3}

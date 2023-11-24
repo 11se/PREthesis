@@ -8,7 +8,7 @@ public class BarrelBomb : MonoBehaviour
     private BarrelBombTrigger _barrelBombTrigger;
 
     [SerializeField]
-    private int _damage = 50;
+    private int _damage = 200;
 
     [SerializeField]
     private GameObject _bombEffect;

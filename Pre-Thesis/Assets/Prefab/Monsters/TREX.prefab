@@ -359,7 +359,7 @@ MonoBehaviour:
   stateMachine: {fileID: 5934278250089470224}
   agent: {fileID: 8571726973928548637}
   player: {fileID: 0}
-  HP: 400
+  HP: 500
   playerTarget: {fileID: 0}
   Radius: 20
   BloodLustPoint: {fileID: 8050346499794387138, guid: f99949ad1ec80f94e910db06c77222a6,

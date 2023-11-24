@@ -8,12 +8,14 @@ public class Door : MonoBehaviour
 {
 
     public GameObject DoorWay;
+    public GameObject DoorWayClose;
     public GameObject Text;
     // Start is called before the first frame update
     void Start()
     {
         DoorWay.SetActive(true);
         Text.SetActive(false);
+        DoorWayClose.SetActive(false);
     }
 
     // Update is called once per frame
@@ -27,7 +29,7 @@ public class Door : MonoBehaviour
         {
             DoorWay.SetActive(false);
             Text.SetActive(true);
-
+            DoorWayClose.SetActive(false);
         }
     }
 }
