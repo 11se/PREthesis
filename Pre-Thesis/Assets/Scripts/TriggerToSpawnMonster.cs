@@ -6,11 +6,11 @@ public class TriggerToSpawnMonster : MonoBehaviour
 {
     [SerializeField]
     private GameObject _monsterSet;
-    public GameObject _CloseArea;
+    
 
     private void Start()
     {
-        _CloseArea.SetActive(false);
+        
     }
 
     private void OnTriggerEnter(Collider other)
@@ -19,7 +19,7 @@ public class TriggerToSpawnMonster : MonoBehaviour
         {
             _monsterSet.SetActive(true);
             Destroy(gameObject);
-            _CloseArea.SetActive(true);
+            
         }
     }
 }
