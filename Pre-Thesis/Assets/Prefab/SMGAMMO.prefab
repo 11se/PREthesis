@@ -120,7 +120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponModel: 1
-  bulletAmount: 50
+  bulletAmount: 30
 --- !u!1001 &1025930294449185579
 PrefabInstance:
   m_ObjectHideFlags: 0
