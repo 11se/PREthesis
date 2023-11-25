@@ -5,49 +5,32 @@ using TMPro;
 using UnityEngine;
 
 public class Weapon : MonoBehaviour
-{
-      
+{ 
     //Shooting
     public bool IsShooting, ReadyToShoot;
-
     bool allowReset = true;
-
     public float shootingDelay = 2f;
     //Burst
     public int bulletsPerBurst = 6;
-
     public int BurstBulletsLeft;
     //Spread
     public float spreadIntensity;
     //Bullet
     public GameObject bulletPrefab;
-
     public Transform bulletSpawn;
-
     public float bulletVelocity = 10;
-
     public float bulletPrefablifeTime = 3f;
 
     private Animator anim;
-
     //Loading
     public float ReloadTime;
-
     public int magazineSize;
-
-
     public int _currentBullet;
-
     public int _bulletLeft;
-
     public bool isReloading;
-
     public bool hasInfiniteAmmo = false;
-
     private PlayerMovement _playerMovement;
-
     private Projectile _projectile;
-
     public enum WeaponModel
     {
         Pistol,

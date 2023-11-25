@@ -638,7 +638,7 @@ GameObject:
   - component: {fileID: 5904603387992170959}
   - component: {fileID: 7542133269496730802}
   - component: {fileID: 2062846416499895456}
-  - component: {fileID: 946246907262944194}
+  - component: {fileID: 7267236434708835912}
   m_Layer: 8
   m_Name: Pistol
   m_TagString: Untagged
@@ -715,7 +715,8 @@ MonoBehaviour:
   hasInfiniteAmmo: 1
   thisModel: 0
   currentshootingMode: 0
---- !u!114 &946246907262944194
+  Recoil_Script: {fileID: 0}
+--- !u!114 &7267236434708835912
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1153,6 +1154,7 @@ GameObject:
   - component: {fileID: 438052147419904361}
   - component: {fileID: 6579307842398889619}
   - component: {fileID: 5179736284125968732}
+  - component: {fileID: 238614660407934914}
   m_Layer: 0
   m_Name: MainCamera
   m_TagString: MainCamera
@@ -1278,6 +1280,20 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 1
+--- !u!114 &238614660407934914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6073515708812612817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f23ae1020eef3b845bcd25071fd5efc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoint: {fileID: 0}
+  TargetWaypoint: {fileID: 0}
 --- !u!1 &6169259037577555465
 GameObject:
   m_ObjectHideFlags: 0
@@ -2359,7 +2375,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8137854845216376271, guid: 27dfe1884aaed5045815b89985222eb3,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6512776653760055539}
+      addedObject: {fileID: 1439729277069082604}
   m_SourcePrefab: {fileID: 100100000, guid: 27dfe1884aaed5045815b89985222eb3, type: 3}
 --- !u!114 &4470850826107373169 stripped
 MonoBehaviour:
@@ -2385,7 +2401,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 4069443907865915538}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &6512776653760055539
+--- !u!114 &1439729277069082604
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2538,7 +2554,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 995644288573281809, guid: d52554deb51c8f449ba3159fb6f8289c,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 8441990395721649020}
+      addedObject: {fileID: 4309084298421013672}
   m_SourcePrefab: {fileID: 100100000, guid: d52554deb51c8f449ba3159fb6f8289c, type: 3}
 --- !u!114 &1116781157574651440 stripped
 MonoBehaviour:
@@ -2558,7 +2574,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 5253740843801351976}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &8441990395721649020
+--- !u!114 &4309084298421013672
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

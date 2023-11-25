@@ -153,6 +153,8 @@ MonoBehaviour:
   bulletDamage: 20
   impactVFX: {fileID: 3148224593243043179, guid: b9bac39ec36787547978790272b0e746,
     type: 3}
+  hitMarker: {fileID: 2400658779727840702, guid: 301b40dbd6e7c9042ae20c6ac8456bee,
+    type: 3}
 --- !u!96 &-4519254704687106855
 TrailRenderer:
   serializedVersion: 3

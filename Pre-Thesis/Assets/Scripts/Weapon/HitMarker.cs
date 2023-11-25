@@ -10,7 +10,6 @@ public class HitMarker : MonoBehaviour
     void Start()
     {
         hitMarker.SetActive(false);
-
     }
 
     // Update is called once per frame

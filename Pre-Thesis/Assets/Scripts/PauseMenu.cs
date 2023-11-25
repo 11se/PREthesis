@@ -15,6 +15,11 @@ public class PauseMenu : MonoBehaviour
     public GameObject CROSSHAIRNUI;
     public GameObject GUNUI;   
     public GameObject AMMOUI;
+    public GameObject WAYPOINTUI;
+    public GameObject OBJECTIVE1;
+    public GameObject OBJECTIVE2;
+    public GameObject NEWOBJECTIVE1;
+    public GameObject NEWOBJECTIVE2;
 
 
     // Start is called before the first frame update
@@ -48,6 +53,12 @@ public class PauseMenu : MonoBehaviour
         CROSSHAIRNUI.SetActive(true);
         GUNUI.SetActive(true);      
         AMMOUI.SetActive(true);
+        WAYPOINTUI.SetActive(true);
+        OBJECTIVE1.SetActive(true);
+        OBJECTIVE2.SetActive(true);
+
+        NEWOBJECTIVE1.SetActive(false);
+        NEWOBJECTIVE2.SetActive(false);
         Time.timeScale = 1;
         IsPaused = false;
         Cursor.lockState = CursorLockMode.Locked;
@@ -63,6 +74,12 @@ public class PauseMenu : MonoBehaviour
         CROSSHAIRNUI.SetActive(false);
         GUNUI.SetActive(false);    
         AMMOUI.SetActive(false);
+        WAYPOINTUI.SetActive(false);
+        OBJECTIVE1.SetActive(false);
+        OBJECTIVE2.SetActive(false);
+
+        NEWOBJECTIVE1.SetActive(true);
+        NEWOBJECTIVE2.SetActive(true);
         Time.timeScale = 0;
         IsPaused = true;
         Cursor.lockState = CursorLockMode.None;

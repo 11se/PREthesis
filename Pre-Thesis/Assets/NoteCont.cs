@@ -9,6 +9,7 @@ public class NoteCont : MonoBehaviour
     public GameObject note;
     public TMP_Text noteInUI;
     public TMP_Text noteInUI2;
+    public TMP_Text noteInUI3;
 
     public void Start()
     {
@@ -29,6 +30,5 @@ public class NoteCont : MonoBehaviour
     {
         note.SetActive(false);
     }
-
 
 }

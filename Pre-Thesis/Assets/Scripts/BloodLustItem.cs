@@ -9,17 +9,6 @@ public class BloodLustItem : MonoBehaviour
            
     public float BloodPoint = 20;
 
-   
-    private void Awake()
-    {
-      
-
-    }
-    private void Start()
-    {
-        
-    }
-
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.GetComponent<Projectile>() is Projectile player)

@@ -17,7 +17,8 @@ public class Projectile : MonoBehaviour
 
     public HealthCont playerBlood;
     public float BloodPoint = 20;
-    
+
+    public GameObject PressText;
 
     public bool hasBloodLust = false;
 
@@ -33,7 +34,8 @@ public class Projectile : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playerBlood = GetComponent<HealthCont>();  
+        playerBlood = GetComponent<HealthCont>();
+        PressText.SetActive(false);
     }
 
     // Update is called once per frame
@@ -54,11 +56,13 @@ public class Projectile : MonoBehaviour
         
         if (playerBlood.currentBlood >= 100)
         {
+            PressText.SetActive(true);
             if (Input.GetKeyDown(KeyCode.Q))
             {
                 hasBloodLust = true;
                 SoundManager.instance.BloodLustUseSound.Play();
                 currentBloodLustCoolDown = maxBloodCooldown;
+                PressText.SetActive(false);
                 UpdateBloodText();
             }
         }

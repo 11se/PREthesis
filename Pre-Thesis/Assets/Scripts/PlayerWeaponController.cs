@@ -10,11 +10,6 @@ public class PlayerWeaponController : MonoBehaviour
 
     private int currentWeaponIndex = 0;
     private int currentIconIndex = 0;
-    private void Start()
-    {       
-        
-    }
-
     void Update()
     {
         if (Input.GetKeyDown("1"))
@@ -26,7 +21,6 @@ public class PlayerWeaponController : MonoBehaviour
         {
             SetActiveWeapon(1);
             SetActiveIcon(1);
-
         }
         if (Input.GetKeyDown("3"))
         {
