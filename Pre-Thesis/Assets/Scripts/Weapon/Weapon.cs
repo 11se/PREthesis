@@ -70,25 +70,30 @@ public class Weapon : MonoBehaviour
        
     public ShootingMode currentshootingMode;
 
-    private void Awake()
-    {
+    public CameraRecoil Recoil_Script;
+
+    private void Start()
+    {        
+
         ReadyToShoot = true;
 
         BurstBulletsLeft = bulletsPerBurst;
 
         anim = GetComponent<Animator>();
 
+        Recoil_Script = GameObject.Find("CameraRot/CameraRecoil").GetComponent<CameraRecoil>();
+
         _playerMovement = GetComponentInParent<PlayerMovement>();
 
         _projectile = GetComponentInParent<Projectile>();
 
-        _currentBullet = magazineSize;
+        _currentBullet = magazineSize;       
     }
 
 
     // Update is called once per frame
     void Update()
-    {
+    {        
 
         if (!_playerMovement.IsReloading()) 
         {
@@ -96,14 +101,14 @@ public class Weapon : MonoBehaviour
             {
 
                 IsShooting = Input.GetKey(KeyCode.Mouse0);
-
+                
 
             }
             else if (currentshootingMode == ShootingMode.Single || currentshootingMode == ShootingMode.Burst)
             {
 
                 IsShooting = Input.GetKeyDown(KeyCode.Mouse0);
-
+                
 
             }
         }
@@ -126,6 +131,7 @@ public class Weapon : MonoBehaviour
             BurstBulletsLeft = bulletsPerBurst;
 
             fireWeapon();
+            
 
         }
         if (AmmoManager.Instance.ammoDisplay != null)
@@ -158,9 +164,9 @@ public class Weapon : MonoBehaviour
 
         SoundManager.instance.PlayShootingSound(thisModel);
 
-
-
         anim.SetTrigger("Shoot");
+
+        Recoil_Script.RecoilFire();
 
         ReadyToShoot = false;
 
@@ -173,6 +179,7 @@ public class Weapon : MonoBehaviour
         bullet.GetComponent<Rigidbody>().AddForce(shootingDirection * bulletVelocity,ForceMode.Impulse);
 
         StartCoroutine(DestroyBulletAfterTime(bullet, bulletPrefablifeTime));
+       
 
         if (allowReset)
         {

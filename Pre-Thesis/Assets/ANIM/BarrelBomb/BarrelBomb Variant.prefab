@@ -80,8 +80,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1836647732019304276, guid: 9cc4bfdbfbc157143962bcba8ca8a484,
         type: 3}
+      propertyPath: m_Height
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1836647732019304276, guid: 9cc4bfdbfbc157143962bcba8ca8a484,
+        type: 3}
       propertyPath: m_Radius
-      value: 11.62
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3559151670102744102, guid: 9cc4bfdbfbc157143962bcba8ca8a484,
         type: 3}
@@ -91,12 +96,12 @@ PrefabInstance:
     - target: {fileID: 4411955545029809840, guid: 9cc4bfdbfbc157143962bcba8ca8a484,
         type: 3}
       propertyPath: m_Radius
-      value: 60
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 5354323094578726646, guid: 9cc4bfdbfbc157143962bcba8ca8a484,
         type: 3}
       propertyPath: _damage
-      value: 5000
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 5354323094578726646, guid: 9cc4bfdbfbc157143962bcba8ca8a484,
         type: 3}

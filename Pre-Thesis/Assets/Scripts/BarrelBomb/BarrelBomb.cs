@@ -22,7 +22,7 @@ public class BarrelBomb : MonoBehaviour
                 Instantiate(_bombEffect, this.transform.position, Quaternion.identity);
             }
 
-            foreach (Enemy enemy in _barrelBombTrigger.InRangeMonsters) 
+            foreach (Enemy enemy in _barrelBombTrigger.InRangeMonsters)
             {
                 enemy.TakeDamage(_damage);
             }

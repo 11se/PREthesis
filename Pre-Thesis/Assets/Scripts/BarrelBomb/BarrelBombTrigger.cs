@@ -8,6 +8,9 @@ public class BarrelBombTrigger : MonoBehaviour
     private List<Enemy> _inRangeMonsters = new List<Enemy>();
     public List<Enemy> InRangeMonsters => _inRangeMonsters;
 
+
+
+    
     private void OnTriggerStay(Collider other)
     {
         Debug.Log("trggerstay" + other.name);

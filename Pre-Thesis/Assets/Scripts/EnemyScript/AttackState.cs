@@ -31,6 +31,7 @@ public class AttackState : BaseState
             // if shot timer > firerate
             if(shotTimer > enemy.fireRate)
             {
+                
                 Shoot();
             }
             if(moveTimer > Random.Range(1, 5))
@@ -56,7 +57,7 @@ public class AttackState : BaseState
         Transform gunbarrel = enemy.IceBall;
         //instantiate a new buller.
         GameObject IceBalls;
-
+        
         if (enemy.EnemyBullet)
         {
             IceBalls = GameObject.Instantiate(enemy.EnemyBullet, gunbarrel.position, enemy.transform.rotation);
@@ -79,8 +80,8 @@ public class AttackState : BaseState
     // Start is called before the first frame update
     void Awake()
     {
-        
 
+        
     }
 
     // Update is called once per frame

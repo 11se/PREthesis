@@ -122,7 +122,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _barrelBombTrigger: {fileID: 3559151670102744102}
-  _damage: 1000
+  _damage: 200
+  _bombEffect: {fileID: 925780361814114784, guid: d0082f778a67ccc4da004d8a467f401e,
+    type: 3}
 --- !u!1 &8884620009040254910
 GameObject:
   m_ObjectHideFlags: 0
@@ -175,7 +177,7 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 14.54
+  m_Radius: 20
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
