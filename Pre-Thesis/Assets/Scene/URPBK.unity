@@ -9242,6 +9242,11 @@ PrefabInstance:
       propertyPath: Recoil_Script
       value: 
       objectReference: {fileID: 77612458}
+    - target: {fileID: 4470850826107373169, guid: a2dd21d29fb1d314fb65f5ccf6af776c,
+        type: 3}
+      propertyPath: spreadIntensity
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4616174756184185624, guid: a2dd21d29fb1d314fb65f5ccf6af776c,
         type: 3}
       propertyPath: PressText
